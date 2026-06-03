@@ -152,6 +152,8 @@
 
                 <a href="#module4" class="text-white hover:text-brandGold transition-colors">Sessions & Liquidity</a>
 
+                <a href="#module5" class="text-white hover:text-brandGold transition-colors">Architecture</a>
+
             </nav>
 
 
@@ -1566,17 +1568,17 @@
 
         </section>
 
-        <!-- Module 2 Hero Section (Market Architecture) -->
+        <!-- Module 2 Hero Section (TradingView Tools) -->
         <section id="module2" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
             <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
                 <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brandGold text-brandGold font-bold tracking-widest text-xs uppercase mb-10 bg-brandGold/5">
                     <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 2
                 </div>
                 <h1 class="text-6xl md:text-8xl font-black font-display leading-none mb-6 tracking-tight uppercase">
-                    Market <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brandGold to-yellow-300">Architecture</span>
+                    Tools in <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brandGold to-yellow-300">TradingView</span>
                 </h1>
                 <p class="text-textMuted text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide mt-8">
-                    Forex & ICT Concepts — Mentorship Program. Master the internal mechanics of order flow, institutional liquidity sweeps, order books, and slippage.
+                    Forex & ICT Concepts — Mentorship Program. Master the chart, drawing, indicators, and tools inside TradingView to execute like a professional.
                 </p>
             </div>
             <!-- Next Arrow -->
@@ -1590,355 +1592,11 @@
             </div>
         </section>
 
-        <!-- Section 2.1: Trader Tiers & Market Impact -->
+        <!-- 3.1 Drawing Tools -->
         <section id="topic-2-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
             <div class="w-full max-w-5xl flex flex-col">
                 <div class="mb-10 text-center md:text-left">
                     <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.1</div>
-                    <h2 class="text-3xl font-black font-display uppercase tracking-wide">Trader Tiers & Market Impact</h2>
-                </div>
-
-                <!-- Trader Categories Grid -->
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Retail Card -->
-                    <div class="glass-panel border-t-4 border-t-rose-500 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group">
-                        <div>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 3: Retail</span>
-                                <span class="text-2xl">👤</span>
-                            </div>
-                            <h4 class="text-xl font-bold text-white mb-3 font-display">Retail Traders</h4>
-                            <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">
-                                Individual retail market participants trading their personal accounts via brokers (MT4/MT5). They act as liquidity takers with zero impact on underlying prices.
-                            </p>
-                        </div>
-                        <div class="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                            <div class="flex justify-between"><span class="text-gray-500">TIMEFRAME</span><span class="text-white">Daily / Short</span></div>
-                            <div class="flex justify-between"><span class="text-gray-500">MAX LOTS</span><span class="text-rose-400 font-semibold">10 Lots ($1M)</span></div>
-                            <div class="mt-4">
-                                <span class="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
-                                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
-                                    <div class="bg-rose-500 h-full w-[5%]"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Professional Card -->
-                    <div class="glass-panel border-t-4 border-t-brandGold p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group">
-                        <div>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="bg-brandGold/10 text-brandGold text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 2: Professional</span>
-                                <span class="text-2xl">💼</span>
-                            </div>
-                            <h4 class="text-xl font-bold text-white mb-3 font-display">Prop & Fund Traders</h4>
-                            <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">
-                                Traders utilizing prop firm capitals or managing small boutique funds. They execute larger blocks of trades that may cause minor local slippage.
-                            </p>
-                        </div>
-                        <div class="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                            <div class="flex justify-between"><span class="text-gray-500">TIMEFRAME</span><span class="text-white">Intraday / Swing</span></div>
-                            <div class="flex justify-between"><span class="text-gray-500">MAX LOTS</span><span class="text-brandGold font-semibold">100 Lots ($10M)</span></div>
-                            <div class="mt-4">
-                                <span class="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
-                                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
-                                    <div class="bg-brandGold h-full w-[20%]"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Institutional Card -->
-                    <div class="glass-panel border-t-4 border-t-emerald-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group">
-                        <div>
-                            <div class="flex justify-between items-center mb-6">
-                                <span class="bg-emerald-400/10 text-emerald-400 text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 1: Institution</span>
-                                <span class="text-2xl">🏢</span>
-                            </div>
-                            <h4 class="text-xl font-bold text-white mb-3 font-display">Banks & Market Makers</h4>
-                            <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">
-                                Central banks, Tier-1 institutions, and massive hedge funds. Their trades are market-moving and must be split using TWAP/VWAP algorithms.
-                            </p>
-                        </div>
-                        <div class="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                            <div class="flex justify-between"><span class="text-gray-500">TIMEFRAME</span><span class="text-white">Weekly / Macro</span></div>
-                            <div class="flex justify-between"><span class="text-gray-500">MAX LOTS</span><span class="text-emerald-400 font-semibold">1,000 - 10,000+ Lots</span></div>
-                            <div class="mt-4">
-                                <span class="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
-                                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
-                                    <div class="bg-emerald-400 h-full w-[100%]"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Callout & Analogy Panel -->
-                <div class="space-y-6 mb-12">
-                    <!-- Summary Callout -->
-                    <div class="bg-brandGold/5 p-5 rounded-lg border border-brandGold/20 flex items-start gap-4 text-xs font-light text-gray-300">
-                        <span class="text-lg mt-0.5">💡</span>
-                        <div>
-                            <p class="font-bold text-white uppercase tracking-wider mb-1">Institutional Mechanics & Liquidity Sweeps</p>
-                            <p class="leading-relaxed">
-                                Because <strong class="text-white">Banks & Institutions</strong> trade in massive scales of <strong class="text-brandGold">1,000 to 10,000+ standard lots</strong> ($100M to $1B+ in contract value), they cannot enter the market instantly without causing massive price slippage. To get filled, their algorithms must seek out massive pools of counter-party liquidity (stop losses of retail/professional traders). This is why key highs/lows are "swept" before a true move begins.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Brush vs Crowd Analogy Widget -->
-                    <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl"></div>
-                        
-                        <h4 class="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
-                            🎨 The "Brush" vs. "The Crowd"
-                        </h4>
-                        <p class="text-gray-400 text-xs font-light mb-6">
-                            A simple analogy explaining the massive power imbalance in Forex market structure.
-                        </p>
-
-                        <div class="grid md:grid-cols-2 gap-8 text-xs font-light text-gray-300 leading-relaxed">
-                            <div class="space-y-3">
-                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">The Brush (Institutions)</h5>
-                                <p>
-                                    Wields concentrated volume. For example, <strong>5 major institutions</strong> placing <strong>100 standard lots</strong> each, resulting in a unified, market-moving block of <strong>500 lots</strong>. They "paint" the charts, sweep liquidity, and dictate direction.
-                                </p>
-                            </div>
-                            <div class="space-y-3">
-                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">The Crowd (Retail)</h5>
-                                <p>
-                                    Highly fragmented and weak. For example, <strong>800 retail traders</strong> placing <strong>0.5 standard lots</strong> each, resulting in <strong>400 lots</strong>. Since retail trades are scattered and cancel each other out, they have zero market impact and serve as counterparties for the institutions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Next Arrow -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-                <a href="#topic-2-2" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                    <span class="uppercase font-bold mb-1">Next Topic</span>
-                    <svg class="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
-        <!-- Section 2.2: Liquidity Mechanics & Slippage -->
-        <section id="topic-2-2" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-            <div class="w-full max-w-5xl flex flex-col">
-                <div class="mb-10 text-center md:text-left">
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.2</div>
-                    <h2 class="text-3xl font-black font-display uppercase tracking-wide">Liquidity Mechanics & Slippage</h2>
-                </div>
-
-                <div class="space-y-8">
-                    <!-- Apple Market Analogy Widget -->
-                    <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
-                        <div class="absolute top-0 left-0 w-32 h-32 bg-brandGold/5 rounded-full blur-2xl"></div>
-                        
-                        <h4 class="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
-                            🍎 The Apple Market Analogy
-                        </h4>
-                        <p class="text-gray-400 text-xs font-light mb-6">
-                            The simplest way to understand how big banks trade against retail traders.
-                        </p>
-
-                        <div class="grid md:grid-cols-2 gap-8 text-xs font-light text-gray-300 leading-relaxed mb-6">
-                            <div class="space-y-4">
-                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">1. The Problem: Slippage</h5>
-                                <p>
-                                    If a bank needs to buy <strong>10,000 apples</strong> instantly, buying one-by-one sweeps up prices (from $1 to $2, $3, etc.). This price jump is called <strong>slippage</strong>. To protect profit margins, banks need to buy all 10,000 apples at $1 at the exact same moment.
-                                </p>
-                            </div>
-                            <div class="space-y-4">
-                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">2. The Solution: Finding the Crowd</h5>
-                                <p>
-                                    To buy a massive amount of stock at a cheap price, the big bank needs to find a place where thousands of retail traders are willing to sell at the exact same time. These sellers are retail traders' stop-losses (sell stops).
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- The Sweep Process -->
-                        <div class="border-t border-white/10 pt-6">
-                            <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs mb-4">The Sweep Timeline:</h5>
-                            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-[11px] text-gray-400 leading-relaxed">
-                                <div class="bg-black/20 p-3 rounded border border-white/5">
-                                    <span class="block font-bold text-brandGold font-display mb-1">1. BAIT 🎯</span>
-                                    <span>Retail buys and places stops (sell orders) below support.</span>
-                                </div>
-                                <div class="bg-black/20 p-3 rounded border border-white/5">
-                                    <span class="block font-bold text-brandGold font-display mb-1">2. PUSH 📉</span>
-                                    <span>Banks push price below support to trigger stop-losses.</span>
-                                </div>
-                                <div class="bg-black/20 p-3 rounded border border-white/5">
-                                    <span class="block font-bold text-brandGold font-display mb-1">3. TRAP 🕸️</span>
-                                    <span>Retail stop-losses trigger automatically as sell orders.</span>
-                                </div>
-                                <div class="bg-black/20 p-3 rounded border border-white/5">
-                                    <span class="block font-bold text-brandGold font-display mb-1">4. FEAST 🍽️</span>
-                                    <span>Banks buy up the flood of retail sells at a cheap price.</span>
-                                </div>
-                                <div class="bg-black/20 p-3 rounded border border-white/5">
-                                    <span class="block font-bold text-brandGold font-display mb-1">5. REVERSAL 🚀</span>
-                                    <span>The bank drives price up, leaving retail stopped out as price takes off.</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- The Shift -->
-                        <div class="bg-brandGold/10 p-4 rounded border border-brandGold/40 text-xs font-light mt-6">
-                            <p class="text-white font-bold font-display mb-1 flex items-center gap-1.5 text-brandGold">
-                                💡 Student Mindset Shift:
-                            </p>
-                            <p class="text-gray-300 leading-relaxed">
-                                Instead of asking, <strong class="text-white font-medium">"Why is the market out to get me?"</strong> you must train your eyes to ask: <strong class="text-white font-medium">"Where are all the retail traders hiding their stop-losses?"</strong> Because that is exactly where the big banks will drive the price next to fill their orders.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Order Book & Slippage Simulator Widget -->
-                    <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl"></div>
-                        
-                        <h4 class="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
-                            📊 Order Book & Slippage Simulator
-                        </h4>
-                        <p class="text-gray-400 text-xs font-light mb-6">
-                            Simulate how different order sizes consume market depth and affect average entry prices.
-                        </p>
-
-                        <div class="grid md:grid-cols-2 gap-8 items-stretch">
-                            <!-- Left Panel: The Order Book Shelf -->
-                            <div class="bg-black/30 p-5 rounded-lg border border-white/5 flex flex-col justify-between">
-                                <div>
-                                    <h5 class="text-white font-bold text-xs uppercase tracking-wider font-display mb-4 border-b border-white/10 pb-2">
-                                        The Order Book (Available Ask/Sell Liquidity)
-                                    </h5>
-                                    <div class="space-y-2 font-mono text-xs" id="order-book-list">
-                                        <!-- Level 1.1004 -->
-                                        <div id="level-11004" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
-                                            <span class="text-rose-400 font-semibold">1.1004</span>
-                                            <div class="flex gap-4">
-                                                <span class="text-gray-500">CAPACITY</span>
-                                                <span class="text-white font-bold">100 Lots</span>
-                                            </div>
-                                        </div>
-                                        <!-- Level 1.1003 -->
-                                        <div id="level-11003" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
-                                            <span class="text-rose-400 font-semibold">1.1003</span>
-                                            <div class="flex gap-4">
-                                                <span class="text-gray-500">CAPACITY</span>
-                                                <span class="text-white font-bold">500 Lots</span>
-                                            </div>
-                                        </div>
-                                        <!-- Level 1.1002 -->
-                                        <div id="level-11002" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
-                                            <span class="text-rose-400 font-semibold">1.1002</span>
-                                            <div class="flex gap-4">
-                                                <span class="text-gray-500">CAPACITY</span>
-                                                <span class="text-white font-bold">300 Lots</span>
-                                            </div>
-                                        </div>
-                                        <!-- Level 1.1001 -->
-                                        <div id="level-11001" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
-                                            <span class="text-rose-400 font-semibold">1.1001</span>
-                                            <div class="flex gap-4">
-                                                <span class="text-gray-500">CAPACITY</span>
-                                                <span class="text-white font-bold">100 Lots</span>
-                                            </div>
-                                        </div>
-                                        <!-- Level 1.1000 -->
-                                        <div id="level-11000" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
-                                            <span class="text-rose-400 font-semibold">1.1000</span>
-                                            <div class="flex gap-4">
-                                                <span class="text-gray-500">CAPACITY</span>
-                                                <span class="text-white font-bold">50 Lots</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mt-6 text-[10px] text-gray-500 italic">
-                                    Note: Standard orders are filled from bottom to top (cheapest available sellers filled first).
-                                </div>
-                            </div>
-
-                            <!-- Right Panel: Execution Panel -->
-                            <div class="bg-black/30 p-5 rounded-lg border border-white/5 flex flex-col justify-between">
-                                <div>
-                                    <h5 class="text-white font-bold text-xs uppercase tracking-wider font-display mb-4 border-b border-white/10 pb-2">
-                                        Institutional Order Execution
-                                    </h5>
-                                    
-                                    <p class="text-gray-400 text-[11px] font-light leading-relaxed mb-4">
-                                        Select an order volume size to trigger execution. Watch how the simulator sweeps the order book and shifts your average fill price.
-                                    </p>
-
-                                    <div class="grid grid-cols-2 gap-2 mb-6">
-                                        <button onclick="simulateOrder(50)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 50 Lots</button>
-                                        <button onclick="simulateOrder(150)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 150 Lots</button>
-                                        <button onclick="simulateOrder(450)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 450 Lots</button>
-                                        <button onclick="simulateOrder(1000)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 1000 Lots</button>
-                                    </div>
-
-                                    <div class="space-y-2 mb-6 text-xs bg-black/40 p-4 rounded border border-white/5 font-mono">
-                                        <div class="flex justify-between"><span class="text-gray-500">Order Quantity:</span><span id="exec-qty" class="text-white font-bold">-</span></div>
-                                        <div class="flex justify-between"><span class="text-gray-500">Average Fill Price:</span><span id="exec-avg-price" class="text-brandGold font-bold">-</span></div>
-                                        <div class="flex justify-between"><span class="text-gray-500">Slippage Cost:</span><span id="exec-slippage" class="text-rose-400 font-bold">-</span></div>
-                                    </div>
-                                </div>
-
-                                <div id="exec-steps-output" class="bg-black/50 p-3 rounded border border-white/5 text-[10px] text-gray-500 font-light min-h-[100px] max-h-[120px] overflow-y-auto">
-                                    Simulation execution logs will print here...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Next Arrow -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-                <a href="#module3" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                    <span class="uppercase font-bold mb-1">Next Topic</span>
-                    <svg class="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
-        <!-- Module 3 Hero Section (TradingView Tools) -->
-        <section id="module3" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
-            <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-                <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brandGold text-brandGold font-bold tracking-widest text-xs uppercase mb-10 bg-brandGold/5">
-                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 3
-                </div>
-                <h1 class="text-6xl md:text-8xl font-black font-display leading-none mb-6 tracking-tight uppercase">
-                    Tools in <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brandGold to-yellow-300">TradingView</span>
-                </h1>
-                <p class="text-textMuted text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide mt-8">
-                    Forex & ICT Concepts — Mentorship Program. Master the chart, drawing, indicators, and tools inside TradingView to execute like a professional.
-                </p>
-            </div>
-            <!-- Next Arrow -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-                <a href="#topic-3-1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                    <span class="uppercase font-bold mb-1">Next Topic</span>
-                    <svg class="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
-        <!-- 3.1 Drawing Tools -->
-        <section id="topic-3-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-            <div class="w-full max-w-5xl flex flex-col">
-                <div class="mb-10 text-center md:text-left">
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 3.1</div>
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Drawing & Analysis Tools</h2>
 
                 </div>
@@ -2069,7 +1727,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#topic-3-2" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#topic-2-2" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -2089,13 +1747,13 @@
 
         <!-- 3.2 Chart Indicators -->
 
-        <section id="topic-3-2" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+        <section id="topic-2-2" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
 
             <div class="w-full max-w-5xl flex flex-col">
 
                 <div class="mb-10 text-center md:text-left">
 
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 3.2</div>
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.2</div>
 
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Technical Indicators</h2>
 
@@ -2169,7 +1827,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#topic-3-3" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#topic-2-3" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -2189,13 +1847,13 @@
 
         <!-- 3.3 Execution & Risk Tools -->
 
-        <section id="topic-3-3" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+        <section id="topic-2-3" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
 
             <div class="w-full max-w-5xl flex flex-col">
 
                 <div class="mb-10 text-center md:text-left">
 
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 3.3</div>
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.3</div>
 
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Execution & Position Sizing</h2>
 
@@ -2251,7 +1909,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#module4" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#module3" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -2269,15 +1927,15 @@
 
 
 
-        <!-- Module 4 Hero Section -->
+        <!-- Module 3 Hero Section -->
 
-        <section id="module4" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
+        <section id="module3" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
 
             <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
 
                 <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brandGold text-brandGold font-bold tracking-widest text-xs uppercase mb-10 bg-brandGold/5">
 
-                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 4
+                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 3
 
                 </div>
 
@@ -2299,7 +1957,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#topic-4-1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#topic-3-1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -2319,13 +1977,13 @@
 
         <!-- 4.1 Candlestick Anatomy -->
 
-        <section id="topic-4-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+        <section id="topic-3-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
 
             <div class="w-full max-w-5xl flex flex-col">
 
                 <div class="mb-10 text-center md:text-left">
 
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.1</div>
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 3.1</div>
 
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Anatomy of a Candlestick</h2>
 
@@ -2581,7 +2239,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#topic-4-2" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#topic-3-2" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -2601,13 +2259,13 @@
 
         <!-- 4.2 Interactive EUR/USD Quote Builder -->
 
-        <section id="topic-4-2" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+        <section id="topic-3-2" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
 
             <div class="w-full max-w-5xl flex flex-col">
 
                 <div class="mb-10 text-center md:text-left">
 
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.2</div>
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 3.2</div>
 
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Interactive EUR/USD Quote Builder</h2>
 
@@ -2775,11 +2433,11 @@
 
             </div>
 
-            <!-- Next Arrow (Points to Section 4.3) -->
+            <!-- Next Arrow (Points to Section 3.3) -->
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#topic-4-3" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#topic-3-3" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -2799,13 +2457,13 @@
 
         <!-- 4.3 Key Candlestick Patterns -->
 
-        <section id="topic-4-3" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+        <section id="topic-3-3" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
 
             <div class="w-full max-w-5xl flex flex-col">
 
                 <div class="mb-10 text-center md:text-left">
 
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.3</div>
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 3.3</div>
 
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Key Candlestick Patterns</h2>
 
@@ -2989,7 +2647,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#module5" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#module4" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Module</span>
 
@@ -3007,15 +2665,15 @@
 
 
 
-        <!-- Module 5 Hero Section -->
+        <!-- Module 4 Hero Section -->
 
-        <section id="module5" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
+        <section id="module4" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
 
             <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
 
                 <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brandGold text-brandGold font-bold tracking-widest text-xs uppercase mb-10 bg-brandGold/5">
 
-                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 5
+                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 4
 
                 </div>
 
@@ -3037,7 +2695,7 @@
 
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 
-                <a href="#topic-5-1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                <a href="#topic-4-1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
 
                     <span class="uppercase font-bold mb-1">Next Topic</span>
 
@@ -3057,13 +2715,13 @@
 
         <!-- 5.1 Sessions & Killzone Hours -->
 
-        <section id="topic-5-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+        <section id="topic-4-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
 
             <div class="w-full max-w-5xl flex flex-col">
 
                 <div class="mb-10 text-center md:text-left">
 
-                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.1</div>
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.1</div>
 
                     <h2 class="text-3xl font-black font-display uppercase tracking-wide">Sessions & Killzone Hours</h2>
 
@@ -4966,6 +4624,351 @@ if show_range and barstate.islast
 
             </div>
 
+            <!-- Next Arrow (Points to Module 5) -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+                <a href="#module5" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                    <span class="uppercase font-bold mb-1">Next Module</span>
+                    <svg class="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Module 5 Hero Section (Market Architecture) -->
+        <section id="module5" class="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
+            <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+                <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brandGold text-brandGold font-bold tracking-widest text-xs uppercase mb-10 bg-brandGold/5">
+                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 5
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black font-display leading-none mb-6 tracking-tight uppercase">
+                    Market <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brandGold to-yellow-300">Architecture</span>
+                </h1>
+                <p class="text-textMuted text-lg md:text-xl max-w-2xl mx-auto font-light tracking-wide mt-8">
+                    Forex & ICT Concepts — Mentorship Program. Master the internal mechanics of order flow, institutional liquidity sweeps, order books, and slippage.
+                </p>
+            </div>
+            <!-- Next Arrow -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+                <a href="#topic-5-1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                    <span class="uppercase font-bold mb-1">Next Topic</span>
+                    <svg class="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 5.1: Trader Tiers & Market Impact -->
+        <section id="topic-5-1" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+            <div class="w-full max-w-5xl flex flex-col">
+                <div class="mb-10 text-center md:text-left">
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.1</div>
+                    <h2 class="text-3xl font-black font-display uppercase tracking-wide">Trader Tiers & Market Impact</h2>
+                </div>
+
+                <!-- Trader Categories Grid -->
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Retail Card -->
+                    <div class="glass-panel border-t-4 border-t-rose-500 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group">
+                        <div>
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 3: Retail</span>
+                                <span class="text-2xl">👤</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3 font-display">Retail Traders</h4>
+                            <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                                Individual retail market participants trading their personal accounts via brokers (MT4/MT5). They act as liquidity takers with zero impact on underlying prices.
+                            </p>
+                        </div>
+                        <div class="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                            <div class="flex justify-between"><span class="text-gray-500">TIMEFRAME</span><span class="text-white">Daily / Short</span></div>
+                            <div class="flex justify-between"><span class="text-gray-500">MAX LOTS</span><span class="text-rose-400 font-semibold">10 Lots ($1M)</span></div>
+                            <div class="mt-4">
+                                <span class="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
+                                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-rose-500 h-full w-[5%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Card -->
+                    <div class="glass-panel border-t-4 border-t-brandGold p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group">
+                        <div>
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="bg-brandGold/10 text-brandGold text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 2: Professional</span>
+                                <span class="text-2xl">💼</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3 font-display">Prop & Fund Traders</h4>
+                            <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                                Traders utilizing prop firm capitals or managing small boutique funds. They execute larger blocks of trades that may cause minor local slippage.
+                            </p>
+                        </div>
+                        <div class="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                            <div class="flex justify-between"><span class="text-gray-500">TIMEFRAME</span><span class="text-white">Intraday / Swing</span></div>
+                            <div class="flex justify-between"><span class="text-gray-500">MAX LOTS</span><span class="text-brandGold font-semibold">100 Lots ($10M)</span></div>
+                            <div class="mt-4">
+                                <span class="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
+                                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-brandGold h-full w-[20%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Institutional Card -->
+                    <div class="glass-panel border-t-4 border-t-emerald-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group">
+                        <div>
+                            <div class="flex justify-between items-center mb-6">
+                                <span class="bg-emerald-400/10 text-emerald-400 text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 1: Institution</span>
+                                <span class="text-2xl">🏢</span>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-3 font-display">Banks & Market Makers</h4>
+                            <p class="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                                Central banks, Tier-1 institutions, and massive hedge funds. Their trades are market-moving and must be split using TWAP/VWAP algorithms.
+                            </p>
+                        </div>
+                        <div class="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                            <div class="flex justify-between"><span class="text-gray-500">TIMEFRAME</span><span class="text-white">Weekly / Macro</span></div>
+                            <div class="flex justify-between"><span class="text-gray-500">MAX LOTS</span><span class="text-emerald-400 font-semibold">1,000 - 10,000+ Lots</span></div>
+                            <div class="mt-4">
+                                <span class="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
+                                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-emerald-400 h-full w-[100%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Callout & Analogy Panel -->
+                <div class="space-y-6 mb-12">
+                    <!-- Summary Callout -->
+                    <div class="bg-brandGold/5 p-5 rounded-lg border border-brandGold/20 flex items-start gap-4 text-xs font-light text-gray-300">
+                        <span class="text-lg mt-0.5">💡</span>
+                        <div>
+                            <p class="font-bold text-white uppercase tracking-wider mb-1">Institutional Mechanics & Liquidity Sweeps</p>
+                            <p class="leading-relaxed">
+                                Because <strong class="text-white">Banks & Institutions</strong> trade in massive scales of <strong class="text-brandGold">1,000 to 10,000+ standard lots</strong> ($100M to $1B+ in contract value), they cannot enter the market instantly without causing massive price slippage. To get filled, their algorithms must seek out massive pools of counter-party liquidity (stop losses of retail/professional traders). This is why key highs/lows are "swept" before a true move begins.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Brush vs Crowd Analogy Widget -->
+                    <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl"></div>
+                        
+                        <h4 class="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
+                            🎨 The "Brush" vs. "The Crowd"
+                        </h4>
+                        <p class="text-gray-400 text-xs font-light mb-6">
+                            A simple analogy explaining the massive power imbalance in Forex market structure.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-8 text-xs font-light text-gray-300 leading-relaxed">
+                            <div class="space-y-3">
+                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">The Brush (Institutions)</h5>
+                                <p>
+                                    Wields concentrated volume. For example, <strong>5 major institutions</strong> placing <strong>100 standard lots</strong> each, resulting in a unified, market-moving block of <strong>500 lots</strong>. They "paint" the charts, sweep liquidity, and dictate direction.
+                                </p>
+                            </div>
+                            <div class="space-y-3">
+                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">The Crowd (Retail)</h5>
+                                <p>
+                                    Highly fragmented and weak. For example, <strong>800 retail traders</strong> placing <strong>0.5 standard lots</strong> each, resulting in <strong>400 lots</strong>. Since retail trades are scattered and cancel each other out, they have zero market impact and serve as counterparties for the institutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Arrow -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+                <a href="#topic-5-2" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                    <span class="uppercase font-bold mb-1">Next Topic</span>
+                    <svg class="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 5.2: Liquidity Mechanics & Slippage -->
+        <section id="topic-5-2" class="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+            <div class="w-full max-w-5xl flex flex-col">
+                <div class="mb-10 text-center md:text-left">
+                    <div class="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.2</div>
+                    <h2 class="text-3xl font-black font-display uppercase tracking-wide">Liquidity Mechanics & Slippage</h2>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Apple Market Analogy Widget -->
+                    <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
+                        <div class="absolute top-0 left-0 w-32 h-32 bg-brandGold/5 rounded-full blur-2xl"></div>
+                        
+                        <h4 class="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
+                            🍎 The Apple Market Analogy
+                        </h4>
+                        <p class="text-gray-400 text-xs font-light mb-6">
+                            The simplest way to understand how big banks trade against retail traders.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-8 text-xs font-light text-gray-300 leading-relaxed mb-6">
+                            <div class="space-y-4">
+                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">1. The Problem: Slippage</h5>
+                                <p>
+                                    If a bank needs to buy <strong>10,000 apples</strong> instantly, buying one-by-one sweeps up prices (from $1 to $2, $3, etc.). This price jump is called <strong>slippage</strong>. To protect profit margins, banks need to buy all 10,000 apples at $1 at the exact same moment.
+                                </p>
+                            </div>
+                            <div class="space-y-4">
+                                <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs">2. The Solution: Finding the Crowd</h5>
+                                <p>
+                                    To buy a massive amount of stock at a cheap price, the big bank needs to find a place where thousands of retail traders are willing to sell at the exact same time. These sellers are retail traders' stop-losses (sell stops).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- The Sweep Process -->
+                        <div class="border-t border-white/10 pt-6">
+                            <h5 class="text-white font-bold font-display uppercase tracking-wider text-xs mb-4">The Sweep Timeline:</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-[11px] text-gray-400 leading-relaxed">
+                                <div class="bg-black/20 p-3 rounded border border-white/5">
+                                    <span class="block font-bold text-brandGold font-display mb-1">1. BAIT 🎯</span>
+                                    <span>Retail buys and places stops (sell orders) below support.</span>
+                                </div>
+                                <div class="bg-black/20 p-3 rounded border border-white/5">
+                                    <span class="block font-bold text-brandGold font-display mb-1">2. PUSH 📉</span>
+                                    <span>Banks push price below support to trigger stop-losses.</span>
+                                </div>
+                                <div class="bg-black/20 p-3 rounded border border-white/5">
+                                    <span class="block font-bold text-brandGold font-display mb-1">3. TRAP 🕸️</span>
+                                    <span>Retail stop-losses trigger automatically as sell orders.</span>
+                                </div>
+                                <div class="bg-black/20 p-3 rounded border border-white/5">
+                                    <span class="block font-bold text-brandGold font-display mb-1">4. FEAST 🍽️</span>
+                                    <span>Banks buy up the flood of retail sells at a cheap price.</span>
+                                </div>
+                                <div class="bg-black/20 p-3 rounded border border-white/5">
+                                    <span class="block font-bold text-brandGold font-display mb-1">5. REVERSAL 🚀</span>
+                                    <span>The bank drives price up, leaving retail stopped out as price takes off.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The Shift -->
+                        <div class="bg-brandGold/10 p-4 rounded border border-brandGold/40 text-xs font-light mt-6">
+                            <p class="text-white font-bold font-display mb-1 flex items-center gap-1.5 text-brandGold">
+                                💡 Student Mindset Shift:
+                            </p>
+                            <p class="text-gray-300 leading-relaxed">
+                                Instead of asking, <strong class="text-white font-medium">"Why is the market out to get me?"</strong> you must train your eyes to ask: <strong class="text-white font-medium">"Where are all the retail traders hiding their stop-losses?"</strong> Because that is exactly where the big banks will drive the price next to fill their orders.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Order Book & Slippage Simulator Widget -->
+                    <div class="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl"></div>
+                        
+                        <h4 class="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
+                            📊 Order Book & Slippage Simulator
+                        </h4>
+                        <p class="text-gray-400 text-xs font-light mb-6">
+                            Simulate how different order sizes consume market depth and affect average entry prices.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                            <!-- Left Panel: The Order Book Shelf -->
+                            <div class="bg-black/30 p-5 rounded-lg border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <h5 class="text-white font-bold text-xs uppercase tracking-wider font-display mb-4 border-b border-white/10 pb-2">
+                                        The Order Book (Available Ask/Sell Liquidity)
+                                    </h5>
+                                    <div class="space-y-2 font-mono text-xs" id="order-book-list">
+                                        <!-- Level 1.1004 -->
+                                        <div id="level-11004" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
+                                            <span class="text-rose-400 font-semibold">1.1004</span>
+                                            <div class="flex gap-4">
+                                                <span class="text-gray-500">CAPACITY</span>
+                                                <span class="text-white font-bold">100 Lots</span>
+                                            </div>
+                                        </div>
+                                        <!-- Level 1.1003 -->
+                                        <div id="level-11003" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
+                                            <span class="text-rose-400 font-semibold">1.1003</span>
+                                            <div class="flex gap-4">
+                                                <span class="text-gray-500">CAPACITY</span>
+                                                <span class="text-white font-bold">500 Lots</span>
+                                            </div>
+                                        </div>
+                                        <!-- Level 1.1002 -->
+                                        <div id="level-11002" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
+                                            <span class="text-rose-400 font-semibold">1.1002</span>
+                                            <div class="flex gap-4">
+                                                <span class="text-gray-500">CAPACITY</span>
+                                                <span class="text-white font-bold">300 Lots</span>
+                                            </div>
+                                        </div>
+                                        <!-- Level 1.1001 -->
+                                        <div id="level-11001" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
+                                            <span class="text-rose-400 font-semibold">1.1001</span>
+                                            <div class="flex gap-4">
+                                                <span class="text-gray-500">CAPACITY</span>
+                                                <span class="text-white font-bold">100 Lots</span>
+                                            </div>
+                                        </div>
+                                        <!-- Level 1.1000 -->
+                                        <div id="level-11000" class="flex justify-between items-center bg-white/5 p-2.5 rounded border border-white/5 transition-all duration-300">
+                                            <span class="text-rose-400 font-semibold">1.1000</span>
+                                            <div class="flex gap-4">
+                                                <span class="text-gray-500">CAPACITY</span>
+                                                <span class="text-white font-bold">50 Lots</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 text-[10px] text-gray-500 italic">
+                                    Note: Standard orders are filled from bottom to top (cheapest available sellers filled first).
+                                </div>
+                            </div>
+
+                            <!-- Right Panel: Execution Panel -->
+                            <div class="bg-black/30 p-5 rounded-lg border border-white/5 flex flex-col justify-between">
+                                <div>
+                                    <h5 class="text-white font-bold text-xs uppercase tracking-wider font-display mb-4 border-b border-white/10 pb-2">
+                                        Institutional Order Execution
+                                    </h5>
+                                    
+                                    <p class="text-gray-400 text-[11px] font-light leading-relaxed mb-4">
+                                        Select an order volume size to trigger execution. Watch how the simulator sweeps the order book and shifts your average fill price.
+                                    </p>
+
+                                    <div class="grid grid-cols-2 gap-2 mb-6">
+                                        <button onclick="simulateOrder(50)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 50 Lots</button>
+                                        <button onclick="simulateOrder(150)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 150 Lots</button>
+                                        <button onclick="simulateOrder(450)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 450 Lots</button>
+                                        <button onclick="simulateOrder(1000)" class="px-3 py-2 bg-brandGold/10 border border-brandGold/20 hover:border-brandGold text-brandGold text-xs font-bold rounded hover:bg-brandGold hover:text-brandDark transition-all duration-300">Buy 1000 Lots</button>
+                                    </div>
+
+                                    <div class="space-y-2 mb-6 text-xs bg-black/40 p-4 rounded border border-white/5 font-mono">
+                                        <div class="flex justify-between"><span class="text-gray-500">Order Quantity:</span><span id="exec-qty" class="text-white font-bold">-</span></div>
+                                        <div class="flex justify-between"><span class="text-gray-500">Average Fill Price:</span><span id="exec-avg-price" class="text-brandGold font-bold">-</span></div>
+                                        <div class="flex justify-between"><span class="text-gray-500">Slippage Cost:</span><span id="exec-slippage" class="text-rose-400 font-bold">-</span></div>
+                                    </div>
+                                </div>
+
+                                <div id="exec-steps-output" class="bg-black/50 p-3 rounded border border-white/5 text-[10px] text-gray-500 font-light min-h-[100px] max-h-[120px] overflow-y-auto">
+                                    Simulation execution logs will print here...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Back to Top Arrow -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
                 <a href="#module1" class="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
@@ -4975,7 +4978,6 @@ if show_range and barstate.islast
                     </svg>
                 </a>
             </div>
-
         </section>
 
 </main>
