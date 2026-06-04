@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pb-20 relative">
+      <main className="pb-20 relative overflow-x-hidden w-full">
 
         {/* Abstract background elements */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brandGold rounded-full mix-blend-overlay filter blur-[200px] opacity-[0.03] pointer-events-none"></div>

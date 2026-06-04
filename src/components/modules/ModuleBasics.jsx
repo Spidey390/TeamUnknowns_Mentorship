@@ -25,9 +25,9 @@ export default function ModuleBasics() {
               </p>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-1-1" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -36,7 +36,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.1 What is Trading? */}
-      <section id="topic-1-1" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-1-1" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="glass-panel w-full max-w-5xl p-8 sm:p-10 md:p-14 rounded-xl border-l-4 border-l-brandGold relative overflow-hidden group">
               <div className="absolute -right-10 -top-10 w-40 h-40 bg-brandGold opacity-5 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
               <div className="flex items-start gap-6 mb-8">
@@ -55,9 +55,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-1-2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -66,7 +66,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.2 What is Forex? */}
-      <section id="topic-1-2" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-1-2" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="glass-panel w-full max-w-5xl p-8 sm:p-10 md:p-14 rounded-xl border-r-4 border-r-brandGold relative overflow-hidden group">
                <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-brandGold opacity-5 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
               <div className="flex items-start gap-6 mb-8">
@@ -116,9 +116,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#pairs" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -127,7 +127,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.3 Currency Pairs & Commodities */}
-      <section id="pairs" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="pairs" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="text-center mb-10">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-4">Section 1.3</div>
@@ -297,9 +297,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#broker-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -308,7 +308,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.4 Broker, Demo Account, Bid/Ask */}
-      <section id="broker-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="broker-section" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.4</div>
@@ -319,9 +319,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#pips-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -330,7 +330,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.5 What is a PIP? */}
-      <section id="pips-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="pips-section" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.5</div>
@@ -341,9 +341,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#lots-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -352,7 +352,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.6 What is a Lot? */}
-      <section id="lots-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="lots-section" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.6</div>
@@ -363,9 +363,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#spread-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -374,7 +374,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.7 What is Spread in Forex? */}
-      <section id="spread-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="spread-section" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
@@ -385,9 +385,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#leverage-margin-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -396,7 +396,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.8 Leverage & Margin */}
-      <section id="leverage-margin-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="leverage-margin-section" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
@@ -407,9 +407,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#mechanics" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -418,7 +418,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.9 Buy/Long and Sell/Short */}
-      <section id="mechanics" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="mechanics" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
@@ -488,9 +488,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#profit-simulator" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -499,7 +499,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.10 Profit & Loss Simulator */}
-      <section id="profit-simulator" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="profit-simulator" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
@@ -510,9 +510,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#trader-types" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -521,7 +521,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.11 Types of Traders & Market Impact */}
-      <section id="trader-types" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="trader-types" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col space-y-12">
               <div className="text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.11</div>
@@ -728,9 +728,9 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#revision-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -739,7 +739,7 @@ export default function ModuleBasics() {
       </section>
 
       {/* 1.12 Quick Revision */}
-      <section id="revision-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="revision-section" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.12</div>
@@ -750,7 +750,7 @@ export default function ModuleBasics() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#module2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Module</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">

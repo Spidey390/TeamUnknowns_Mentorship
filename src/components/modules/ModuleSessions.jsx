@@ -21,9 +21,9 @@ export default function ModuleSessions() {
               </p>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-5-1" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -32,7 +32,7 @@ export default function ModuleSessions() {
       </section>
 
       {/* Section 5.1: Market Sessions & Overlaps */}
-      <section id="topic-5-1" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-5-1" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.1</div>
@@ -117,9 +117,9 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-5-2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -128,7 +128,7 @@ export default function ModuleSessions() {
       </section>
 
       {/* Section 5.2: Custom TradingView Indicator */}
-      <section id="topic-5-2" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-5-2" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.2</div>
@@ -164,9 +164,9 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-5-3" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -175,7 +175,7 @@ export default function ModuleSessions() {
       </section>
 
       {/* Section 5.3: Kill Zones & Power of 3 (PO3) */}
-      <section id="topic-5-3" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-5-3" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.3</div>
@@ -430,9 +430,9 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-5-4" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -441,7 +441,7 @@ export default function ModuleSessions() {
       </section>
 
       {/* Section 5.4: Liquidity Concepts: Foundation */}
-      <section id="topic-5-4" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-5-4" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.4</div>
@@ -492,9 +492,9 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-5-5" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -503,7 +503,7 @@ export default function ModuleSessions() {
       </section>
 
       {/* Section 5.5: Liquidity Pools & Resting Places */}
-      <section id="topic-5-5" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-5-5" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.5</div>
@@ -676,9 +676,9 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#topic-5-6" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
@@ -687,7 +687,7 @@ export default function ModuleSessions() {
       </section>
 
       {/* Section 5.6: Liquidity Mechanics & Slippage */}
-      <section id="topic-5-6" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      <section id="topic-5-6" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.6</div>
@@ -790,7 +790,7 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow (Points to Module 5) */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
               <a href="#module6" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Module</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
