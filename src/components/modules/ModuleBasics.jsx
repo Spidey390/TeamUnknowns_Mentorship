@@ -3,6 +3,7 @@ import TraderQuiz from '../TraderQuiz';
 import PipCalculator from '../PipCalculator';
 import LotVisualizer from '../LotVisualizer';
 import ProfitCalculator from '../ProfitCalculator';
+import SpreadVisualizer from '../SpreadVisualizer';
 
 export default function ModuleBasics() {
   return (
@@ -332,6 +333,28 @@ export default function ModuleBasics() {
           </div>
           {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#spread-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.6 What is Spread in Forex? */}
+      <section id="spread-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.6</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">What is Spread in Forex?</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <SpreadVisualizer />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#profit-simulator" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -341,11 +364,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.6 Profit & Loss Simulator */}
+      {/* 1.7 Profit & Loss Simulator */}
       <section id="profit-simulator" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.6</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Profit & Loss Simulator</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
@@ -363,11 +386,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.7 How Do Traders Make Money? */}
+      {/* 1.8 How Do Traders Make Money? */}
       <section id="mechanics" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">How Do Traders Make Money?</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14">
@@ -444,11 +467,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.8 Types of Traders */}
+      {/* 1.9 Types of Traders */}
       <section id="trader-types" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Types of Traders</h2>
               </div>
 
@@ -545,11 +568,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.9 Key terms */}
+      {/* 1.10 Key terms */}
       <section id="terms" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Key Terms (Basics)</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-white p-1">
@@ -591,78 +614,10 @@ export default function ModuleBasics() {
                   </div>
               </div>
           </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#topic-1-10" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
-
-      {/* 1.10 Spread */}
-      <section id="topic-1-10" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Spread (The Cost of Trading)</h2>
-              </div>
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Understanding Bid, Ask, and the Transaction Fee:</p>
-                  <div className="grid lg:grid-cols-2 gap-8 text-sm font-light leading-relaxed text-gray-300">
-                      <div className="space-y-6">
-                          <div className="bg-black/30 p-6 rounded-lg border border-white/5">
-                              <h3 className="text-brandGold font-bold uppercase text-xs tracking-wider mb-2 font-display">What is a Spread?</h3>
-                              <p className="text-gray-300">
-                                  The spread is the difference between the buying price (<strong className="text-white">Ask</strong>) and the selling price (<strong className="text-white">Bid</strong>) of an asset. It represents the transactional fee charged by the broker to execute your trade.
-                              </p>
-                          </div>
-                          <div className="bg-black/30 p-6 rounded-lg border border-white/5">
-                              <h3 className="text-brandGold font-bold uppercase text-xs tracking-wider mb-2 font-display">Bid vs. Ask Explained</h3>
-                              <ul className="space-y-3 text-xs">
-                                  <li className="flex items-start gap-2">
-                                      <span className="text-red-400 font-bold">BID:</span> 
-                                      <span>The price the market is willing to pay to buy from you (the price you <strong className="text-red-400">SELL</strong> at).</span>
-                                  </li>
-                                  <li className="flex items-start gap-2">
-                                      <span className="text-green-400 font-bold">ASK:</span> 
-                                      <span>The price the market demands to sell to you (the price you <strong className="text-green-400">BUY</strong> at).</span>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div className="flex flex-col justify-between bg-black/40 border border-white/10 p-6 rounded-xl relative">
-                          <div className="absolute top-0 left-0 w-1 h-full bg-brandGold"></div>
-                          <div>
-                              <h3 className="text-brandGold font-bold uppercase text-xs tracking-wider mb-4 font-display">Spread Visualized (EUR/USD Example)</h3>
-                              <div className="grid grid-cols-2 gap-4 text-center mb-6">
-                                  <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-lg">
-                                      <span className="block text-xs text-red-400 uppercase font-semibold mb-1">Bid Price (Sell)</span>
-                                      <span className="text-2xl font-bold font-mono text-white">1.1000</span>
-                                  </div>
-                                  <div className="bg-green-500/10 border border-green-500/20 p-4 rounded-lg">
-                                      <span className="block text-xs text-green-400 uppercase font-semibold mb-1">Ask Price (Buy)</span>
-                                      <span className="text-2xl font-bold font-mono text-white">1.1002</span>
-                                  </div>
-                              </div>
-                              <div className="bg-black/60 p-4 rounded-lg border border-brandGold/20 text-center">
-                                  <span className="text-gray-400 text-xs uppercase block mb-1">Calculated Spread</span>
-                                  <span className="text-brandGold text-lg font-bold font-mono">1.1002 - 1.1000 = 0.0002 <span className="text-white">(2 Pips)</span></span>
-                              </div>
-                          </div>
-                          <div className="mt-6 text-xs text-gray-500 italic">
-                              💡 Liquid currency pairs (like EUR/USD) have tight spreads (0-2 pips), whereas exotic pairs (like USD/INR) have much wider spreads (30+ pips) due to lower trading volumes.
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
           {/* Next Arrow (Points to Module 2) */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#module2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <span className="uppercase font-bold mb-1">Next Module</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
