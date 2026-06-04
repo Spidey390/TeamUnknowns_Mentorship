@@ -21,8 +21,8 @@ export default function Home() {
         <div className="circle-accent w-[300px] h-[300px] top-80 right-20 border-opacity-5"></div>
 
         <ModuleBasics />
-        <ModuleTradingView />
         <ModuleCandlesticks />
+        <ModuleTradingView />
         <ModuleSessions />
         <ModuleArchitecture />
 
