@@ -4,6 +4,9 @@ import PipCalculator from '../PipCalculator';
 import LotVisualizer from '../LotVisualizer';
 import ProfitCalculator from '../ProfitCalculator';
 import SpreadVisualizer from '../SpreadVisualizer';
+import LeverageMarginVisualizer from '../LeverageMarginVisualizer';
+import BrokerVisualizer from '../BrokerVisualizer';
+import RevisionVisualizer from '../RevisionVisualizer';
 
 export default function ModuleBasics() {
   return (
@@ -355,6 +358,72 @@ export default function ModuleBasics() {
           </div>
           {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#leverage-margin-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.7 What is Leverage & Margin in Forex? */}
+      <section id="leverage-margin-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Leverage & Margin</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <LeverageMarginVisualizer />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#broker-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.8 What is a Forex Broker? */}
+      <section id="broker-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">What is a Forex Broker?</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <BrokerVisualizer />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#revision-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.9 Quick Revision for Students */}
+      <section id="revision-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Quick Revision</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <RevisionVisualizer />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#profit-simulator" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -364,11 +433,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.7 Profit & Loss Simulator */}
+      {/* 1.10 Profit & Loss Simulator */}
       <section id="profit-simulator" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Profit & Loss Simulator</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
@@ -386,11 +455,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.8 How Do Traders Make Money? */}
+      {/* 1.11 How Do Traders Make Money? */}
       <section id="mechanics" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.11</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">How Do Traders Make Money?</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14">
@@ -467,11 +536,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.9 Types of Traders */}
+      {/* 1.12 Types of Traders */}
       <section id="trader-types" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.12</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Types of Traders</h2>
               </div>
 
@@ -556,63 +625,6 @@ export default function ModuleBasics() {
 
               {/* Interactive Quiz Widget */}
               <TraderQuiz />
-          </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#terms" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
-
-      {/* 1.10 Key terms */}
-      <section id="terms" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Key Terms (Basics)</h2>
-              </div>
-              <div className="glass-panel border-t-4 border-t-white p-1">
-                  <div className="overflow-x-auto">
-                      <table className="w-full text-left min-w-[400px]">
-                          <thead>
-                              <tr className="bg-black text-xs tracking-widest uppercase text-brandGold">
-                                  <th className="p-6 font-bold w-1/3">Term</th>
-                                  <th className="p-6 font-bold">Meaning</th>
-                              </tr>
-                          </thead>
-                          <tbody className="divide-y divide-white/5 text-sm font-light">
-                              <tr className="hover:bg-brandGold/5 transition-colors">
-                                  <td className="p-5 text-white font-bold tracking-wider uppercase text-xs">Pip</td>
-                                  <td className="p-5 text-gray-400">Smallest price movement (0.0001)</td>
-                              </tr>
-                              <tr className="hover:bg-brandGold/5 transition-colors bg-black/20">
-                                  <td className="p-5 text-white font-bold tracking-wider uppercase text-xs">Lot Size</td>
-                                  <td className="p-5 text-gray-400">Volume of trade (Standard = 100,000 units)</td>
-                              </tr>
-                              <tr className="hover:bg-brandGold/5 transition-colors">
-                                  <td className="p-5 text-white font-bold tracking-wider uppercase text-xs">Spread</td>
-                                  <td className="p-5 text-gray-400">Difference between Buy & Sell price (broker's fee)</td>
-                              </tr>
-                              <tr className="hover:bg-brandGold/5 transition-colors bg-black/20">
-                                  <td className="p-5 text-white font-bold tracking-wider uppercase text-xs">Leverage</td>
-                                  <td className="p-5 text-gray-400">Trading more than your capital (e.g., 1:100)</td>
-                              </tr>
-                              <tr className="hover:bg-brandGold/5 transition-colors">
-                                  <td className="p-5 text-white font-bold tracking-wider uppercase text-xs">Margin</td>
-                                  <td className="p-5 text-gray-400">Collateral required to open a trade</td>
-                              </tr>
-                              <tr className="hover:bg-brandGold/5 transition-colors bg-black/20">
-                                  <td className="p-5 text-white font-bold tracking-wider uppercase text-xs">Broker</td>
-                                  <td className="p-5 text-gray-400">Platform where you trade (MT4, MT5)</td>
-                              </tr>
-                          </tbody>
-                      </table>
-                  </div>
-              </div>
           </div>
           {/* Next Arrow (Points to Module 2) */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
