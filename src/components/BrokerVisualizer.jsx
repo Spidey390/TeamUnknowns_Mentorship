@@ -109,7 +109,7 @@ export default function BrokerVisualizer() {
                 <span className="text-white font-bold font-display tracking-wider text-sm">{b.name}</span>
                 <span className="text-brandGold font-mono text-[10px] font-bold">{b.rating}</span>
               </div>
-              <span className="text-[10px] bg-brandGold/10 text-brandGold px-1.5 py-0.5 rounded font-semibold font-mono block w-max uppercase">
+              <span className="text-[9px] bg-brandGold/10 text-brandGold px-2 py-1 rounded font-semibold font-mono inline-block max-w-full uppercase leading-tight whitespace-normal">
                 {b.type}
               </span>
               <p className="text-[11px] text-gray-400 font-light leading-relaxed">
