@@ -724,10 +724,14 @@ export default function ModuleSessions() {
                       <div className="bg-black/40 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center min-h-[300px] relative">
                           <div className="absolute top-4 left-4 text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Dynamic Schematic</div>
                           
-                          <svg width="600" height="240" viewBox="0 0 600 240" className="w-full max-w-[600px] select-none">
+                          <svg width="600" height="280" viewBox="0 0 600 280" className="w-full max-w-[600px] select-none">
                               {/* Background grids */}
                               <line x1="20" y1="120" x2="580" y2="120" stroke="rgba(255,255,255,0.03)" strokeWidth="1" strokeDasharray="2,2" />
                               
+                              {/* Dotted boundaries extending from Asian Range */}
+                              <line x1="220" y1="80" x2="340" y2="80" stroke="rgba(250, 204, 21, 0.2)" strokeWidth="1" strokeDasharray="3,3" />
+                              <line x1="220" y1="160" x2="270" y2="160" stroke="rgba(239, 68, 68, 0.2)" strokeWidth="1" strokeDasharray="3,3" />
+
                               {/* Asian consolidation range box */}
                               <rect
                                   x="40"
@@ -741,13 +745,38 @@ export default function ModuleSessions() {
                                   rx="4"
                                   className="transition-all duration-500"
                               />
-                              <text x="130" y="70" fill={activePhase === 'accumulation' ? "#facc15" : "rgba(255,255,255,0.2)"} fontSize="8" fontFamily="monospace" textAnchor="middle" fontWeight="bold">
+                              <text 
+                                  x="130" 
+                                  y="60" 
+                                  fill={activePhase === 'accumulation' ? "#facc15" : "rgba(255,255,255,0.2)"} 
+                                  fontSize="8" 
+                                  fontFamily="monospace" 
+                                  textAnchor="middle" 
+                                  fontWeight="bold"
+                                  style={{ paintOrder: 'stroke', stroke: '#0a0a0a', strokeWidth: '3px', strokeLinejoin: 'round' }}
+                              >
                                   ASIAN CONSOLIDATION (ACCUMULATION)
                               </text>
-                              <text x="130" y="105" fill={activePhase === 'accumulation' ? "#60a5fa" : "rgba(255, 255, 255, 0.15)"} fontSize="7" fontFamily="monospace" textAnchor="middle">
+                              <text 
+                                  x="130" 
+                                  y="92" 
+                                  fill={activePhase === 'accumulation' ? "#60a5fa" : "rgba(255, 255, 255, 0.15)"} 
+                                  fontSize="7" 
+                                  fontFamily="monospace" 
+                                  textAnchor="middle"
+                                  style={{ paintOrder: 'stroke', stroke: '#0a0a0a', strokeWidth: '3px', strokeLinejoin: 'round' }}
+                              >
                                   Equal Highs (Buy Stops)
                               </text>
-                              <text x="130" y="145" fill={activePhase === 'accumulation' ? "#ef4444" : "rgba(255, 255, 255, 0.15)"} fontSize="7" fontFamily="monospace" textAnchor="middle">
+                              <text 
+                                  x="130" 
+                                  y="152" 
+                                  fill={activePhase === 'accumulation' ? "#ef4444" : "rgba(255, 255, 255, 0.15)"} 
+                                  fontSize="7" 
+                                  fontFamily="monospace" 
+                                  textAnchor="middle"
+                                  style={{ paintOrder: 'stroke', stroke: '#0a0a0a', strokeWidth: '3px', strokeLinejoin: 'round' }}
+                              >
                                   Equal Lows (Sell Stops)
                               </text>
 
@@ -787,12 +816,13 @@ export default function ModuleSessions() {
                               />
                               <text
                                   x="255"
-                                  y="220"
+                                  y="235"
                                   fill={activePhase === 'manipulation' ? "#ef4444" : "rgba(255,255,255,0.15)"}
                                   fontSize="8"
                                   fontFamily="monospace"
                                   textAnchor="middle"
                                   fontWeight="bold"
+                                  style={{ paintOrder: 'stroke', stroke: '#0a0a0a', strokeWidth: '3px', strokeLinejoin: 'round' }}
                               >
                                   LONDON SSL SWEEP (MANIPULATION)
                               </text>
@@ -813,12 +843,13 @@ export default function ModuleSessions() {
                                   className="transition-all duration-500"
                               />
                               <text
-                                  x="365"
-                                  y="50"
+                                  x="410"
+                                  y="105"
                                   fill={activePhase === 'distribution' ? "#22c55e" : "rgba(255,255,255,0.15)"}
                                   fontSize="8"
                                   fontFamily="monospace"
                                   fontWeight="bold"
+                                  style={{ paintOrder: 'stroke', stroke: '#0a0a0a', strokeWidth: '3px', strokeLinejoin: 'round' }}
                               >
                                   NY CONTINUATION (DISTRIBUTION)
                               </text>
