@@ -108,7 +108,7 @@ html {
   }
 
   section[id^="module"] {
-    padding-top: 4rem !important;
+    padding-top: 8rem !important;
     padding-bottom: 4rem !important;
   }
 
@@ -123,9 +123,9 @@ html {
   section[id="profit-simulator"],
   section[id="mechanics"],
   section[id="trader-types"] {
+    min-height: auto !important;
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
-    align-items: flex-start !important;
   }
 }
 
@@ -162,7 +162,7 @@ html {
 
   section[id^="module"] {
     min-height: calc(100svh - 88px) !important;
-    padding-top: 4rem !important;
+    padding-top: 8rem !important;
     padding-bottom: 4rem !important;
   }
 

@@ -19,16 +19,7 @@ export default function ModuleCandlesticks() {
                   Forex & ICT Concepts — Mentorship Program. Translate raw price action into readable market narratives using EUR/USD examples.
               </p>
           </div>
-          {/* Next Arrow */}
-          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
-              <a href="#topic-2-1" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
+</section>
 
       {/* 2.1 Anatomy of a Candlestick */}
       <section id="topic-2-1" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
@@ -158,16 +149,7 @@ export default function ModuleCandlesticks() {
                   </div>
               </div>
           </div>
-          {/* Next Arrow */}
-          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
-              <a href="#topic-2-2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
+</section>
 
       {/* 2.2 Interactive EUR/USD Quote Builder */}
       <section id="topic-2-2" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
@@ -181,16 +163,7 @@ export default function ModuleCandlesticks() {
                   <QuoteBuilder />
               </div>
           </div>
-          {/* Next Arrow */}
-          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
-              <a href="#topic-2-3" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
+</section>
 
       {/* 2.3 Timeframes & Analogy */}
       <section id="topic-2-3" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
@@ -203,16 +176,7 @@ export default function ModuleCandlesticks() {
                   <TimeframeVisualizer />
               </div>
           </div>
-          {/* Next Arrow */}
-          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
-              <a href="#topic-2-4" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1 whitespace-nowrap">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
+</section>
 
       {/* 2.4 Key Candlestick Patterns */}
       <section id="topic-2-4" className="min-h-screen flex flex-col items-center justify-center py-24 px-4 sm:px-6 relative z-10">
@@ -223,16 +187,7 @@ export default function ModuleCandlesticks() {
               </div>
               <PatternExplorer />
           </div>
-          {/* Next Arrow (Links to Module 3 Hero) */}
-          <div className="mt-8 flex justify-center w-full md:absolute md:bottom-8 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
-              <a href="#module3" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Module</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
+</section>
     </>
   );
 }

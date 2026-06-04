@@ -69,9 +69,9 @@ export default function PipCalculator() {
     <div className="w-full">
       <div className="space-y-8 animate-fadeIn">
         {/* Pair Toggle */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-black/40 border border-white/5 p-4 rounded-xl">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 bg-black/40 border border-white/5 p-4 rounded-xl text-center sm:text-left">
           <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider">Select Asset Pair:</span>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-center sm:justify-end gap-2">
             <button
               onClick={() => setPair('EUR/USD')}
               className={`px-4 py-1.5 rounded font-bold text-xs transition-all duration-300 ${
