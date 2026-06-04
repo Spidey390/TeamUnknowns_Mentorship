@@ -94,7 +94,7 @@ export default function ModuleBasics() {
                       <span>No central exchange — it's decentralized (over-the-counter).</span>
                   </li>
               </ul>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="grid md:grid-cols-3 gap-6 mt-6">
                   <div className="bg-brandGold/5 p-5 rounded border border-brandGold/20">
                       <span className="text-brandGold font-bold uppercase text-xs tracking-widest block mb-2">Example</span> 
                       <span className="text-gray-300 font-light text-sm">USD/INR = <span className="text-white font-bold">83.50</span> <br />→ You're buying 1 US Dollar for 83.50 Indian Rupees.</span>
@@ -105,6 +105,12 @@ export default function ModuleBasics() {
                           🟢 <strong className="text-white">Opens:</strong> Monday at 3:30 AM IST<br />
                           🔴 <strong className="text-white">Closes:</strong> Saturday at 3:30 AM IST<br />
                           <span className="text-xs text-gray-500 block mt-2">💡 Runs 24 hours a day, 5 days a week across major global sessions (Sydney, Tokyo, London, New York).</span>
+                      </span>
+                  </div>
+                  <div className="bg-brandGold/5 p-5 rounded border border-red-500/20 col-span-1 md:col-span-3">
+                      <span className="text-red-400 font-bold uppercase text-xs tracking-widest block mb-2">💡 The Myth of the "Free Market"</span> 
+                      <span className="text-gray-300 font-light text-xs block leading-relaxed">
+                          Retail textbooks teach that price moves randomly based on millions of retail buy and sell orders. **This is a lie.** The forex market is controlled by central bank algorithms—specifically the **Interbank Price Delivery Algorithm (IPDA)**. Price is delivered logically to seek out resting liquidity pools and rebalance inefficient pricing voids. Your goal as an institutional trader is to track IPDA's footprints.
                       </span>
                   </div>
               </div>

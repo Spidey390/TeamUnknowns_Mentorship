@@ -46,14 +46,14 @@ export default function ModuleTradingView() {
                       {/* Trendlines */}
                       <div className="bg-black/30 p-6 md:p-8 rounded-xl border border-white/5 flex flex-col md:flex-row items-center gap-8 transition-all duration-300 hover:border-brandGold/30">
                           <div className="flex-1 space-y-4">
-                              <span className="bg-brandGold/20 text-brandGold px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider block w-max font-display">Trend & Shift</span>
-                              <h3 className="text-2xl font-bold text-white">Trendlines & Rays</h3>
+                              <span className="bg-brandGold/20 text-brandGold px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider block w-max font-display">Liquidity Pools</span>
+                              <h3 className="text-2xl font-bold text-white">Trendlines as Liquidity Pools</h3>
                               <p className="text-sm text-gray-400 leading-relaxed">
-                                  Used to connect swing highs and swing lows. Critical for marking out <strong className="text-white font-semibold">Market Structure Shifts (MSS)</strong> and breakouts.
+                                  Retail traders view trendlines as diagonal support or resistance. In institutional trading, these trendlines are recognized as <strong className="text-white font-semibold">diagonally engineered liquidity pools</strong>. They exist to induce retail buying or selling, building up a cluster of stop-losses resting directly below or above them for the algorithm to sweep.
                               </p>
                               <div className="bg-brandGold/5 border-l-2 border-brandGold p-4 rounded-r-lg mt-4">
                                   <h4 className="text-brandGold font-bold text-xs uppercase tracking-wider mb-1">ICT Concept Tip</h4>
-                                  <p className="text-xs text-gray-300 font-light">Retail traders view trendlines as support or resistance. In institutional trading, these trendlines build up liquidity (stops resting above/below). The algorithm often sweeps this liquidity before the true move occurs.</p>
+                                  <p className="text-xs text-gray-300 font-light">Never trade breakouts or bounces along trendlines. The interbank algorithm targets these diagonal lines to run stops, gathering the necessary opposite orders before reversing to the true direction.</p>
                               </div>
                           </div>
                           <div className="w-full md:w-[450px] flex-shrink-0 border border-white/10 rounded-lg overflow-hidden bg-black/40 shadow-lg">
@@ -125,12 +125,12 @@ export default function ModuleTradingView() {
                       {/* Indicator panel */}
                       <div className="space-y-4">
                           <div className="bg-black/30 p-4 rounded border border-white/5">
-                              <h3 className="text-white font-semibold mb-1">Moving Averages (EMA / SMA)</h3>
-                              <p className="text-xs text-gray-400">Smoothes out price action to identify macro trend direction. Traders often track the 50, 100, and 200 EMAs.</p>
+                              <h3 className="text-white font-semibold mb-1">Moving Averages (EMA / SMA) — Lagging Retail Decoys</h3>
+                              <p className="text-xs text-gray-400">Retailers use crossovers or bounces off moving averages. Because of this, the algorithm targets these price points to execute stop hunts, leaving retail stopped out at "crossover" zones.</p>
                           </div>
                           <div className="bg-black/30 p-4 rounded border border-white/5">
-                              <h3 className="text-white font-semibold mb-1">Relative Strength Index (RSI)</h3>
-                              <p className="text-xs text-gray-400">A momentum oscillator that tracks buyers vs. sellers, showing overbought (70) and oversold (30) levels.</p>
+                              <h3 className="text-white font-semibold mb-1">Relative Strength Index (RSI) — Lagging Momentum Trap</h3>
+                              <p className="text-xs text-gray-400">Designed to show overbought (70) and oversold (30) levels. When retail sells an "overbought" RSI, they place buy stops above the high. The algorithm sweeps these buy stops to fill institutional short positions.</p>
                           </div>
                       </div>
 
@@ -139,7 +139,7 @@ export default function ModuleTradingView() {
                           <div>
                               <h3 className="text-brandGold font-bold uppercase text-xs tracking-wider font-display mb-3">Session & Time Highlights</h3>
                               <p className="text-gray-400 text-xs leading-relaxed mb-4">
-                                  Time is crucial in ICT concept trading. Use Session Indicators (such as "Session Boxes") to shade and highlight London and New York session killzones directly on lower-timeframe charts.
+                                  Time is the ultimate key that unlocks price. While indicators lag, the market's clock is precise. The algorithm only seeks liquidity during specific hours. Shading killzones on your chart shows you exactly when to expect institutional sweeps.
                               </p>
                           </div>
                           <div className="bg-brandGold/5 p-4 rounded border border-brandGold/20 text-xs font-semibold text-center text-white">

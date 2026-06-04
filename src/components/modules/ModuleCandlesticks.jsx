@@ -84,15 +84,15 @@ export default function ModuleCandlesticks() {
                               <div className="text-xs space-y-4 max-w-[200px] text-gray-300">
                                   <div>
                                       <span className="text-white font-bold block">1. Upper Wick (Shadow):</span>
-                                      Shows the highest price reached during the timeframe.
+                                      Represents **algorithmic rejection**. The algorithm ran price up to sweep Buy-Side Liquidity (BSL) before dropping back down.
                                   </div>
                                   <div>
                                       <span className="text-white font-bold block">2. Real Body:</span>
-                                      Shows the range between Open and Close. Filled green because Close &gt; Open.
+                                      Represents **displacement**. A large body indicates strong institutional sponsorship and one-sided order flow.
                                   </div>
                                   <div>
                                       <span className="text-white font-bold block">3. Lower Wick:</span>
-                                      Shows the lowest price reached.
+                                      Represents **liquidity grabs**. The price ran down to trigger Sell-Side Liquidity (SSL) before reversing up.
                                   </div>
                               </div>
                           </div>
@@ -141,15 +141,15 @@ export default function ModuleCandlesticks() {
                               <div className="text-xs space-y-4 max-w-[200px] text-gray-300">
                                   <div>
                                       <span className="text-white font-bold block">1. Upper Wick:</span>
-                                      Shows the highest price. Buyers pushed price up, but sellers pushed it back down.
+                                      Represents **stop hunts**. The algorithm ran price up to trigger retail buy stops before reversing downward.
                                   </div>
                                   <div>
                                       <span className="text-white font-bold block">2. Real Body:</span>
-                                      Shows the drop. Filled red because Close &lt; Open.
+                                      Represents **displacement**. A long red body shows institutional selling pressure and aggressive bearish order flow.
                                   </div>
                                   <div>
                                       <span className="text-white font-bold block">3. Lower Wick:</span>
-                                      Shows the lowest price. Sellers pushed low, but buyers pushed it back up slightly.
+                                      Represents **rejection**. The price was driven down to hunt stops, but met immediate institutional buying support.
                                   </div>
                               </div>
                           </div>

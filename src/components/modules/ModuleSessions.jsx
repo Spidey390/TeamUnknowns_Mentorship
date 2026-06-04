@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PineScriptSection from '../PineScriptSection';
 
 export default function ModuleSessions() {
+  const [activePhase, setActivePhase] = useState('accumulation');
   return (
     <>
       {/* Module 4 Hero Section */}
@@ -315,64 +316,220 @@ export default function ModuleSessions() {
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.3</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Killzones & Liquidity Sweeps</h2>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Algorithmic Power of 3 (PO3)</h2>
               </div>
               
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">How institutional algorithms utilize time-based sessions to sweep retail liquidity pools:</p>
+                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">How smart money utilizes the daily cycle (Accumulation $\rightarrow$ Manipulation $\rightarrow$ Distribution):</p>
                   
-                  <div className="grid lg:grid-cols-2 gap-12 items-center">
-                      {/* Left Panel: Concept & Explanation */}
-                      <div className="space-y-6">
-                          <div className="bg-black/30 p-6 rounded-xl border border-white/5 space-y-4">
-                              <h3 className="text-brandGold font-bold uppercase text-xs tracking-wider font-display flex items-center gap-2">
-                                  <span className="w-2.5 h-2.5 rounded-full bg-brandGold animate-pulse"></span>
-                                  Time (When) meets Price (Where)
-                              </h3>
-                              <p className="text-xs text-gray-300 font-light leading-relaxed">
-                                  In ICT concepts, the market is governed by an algorithm that operates during specific hours (Killzones). The algorithm does not look for indicators; it seeks **Liquidity** (stops resting above highs and below lows).
-                              </p>
-                          </div>
-                          
-                          <div className="space-y-4">
-                              <div className="bg-black/20 p-4 rounded-lg border border-white/5">
-                                  <h4 className="text-white font-bold text-xs uppercase mb-1">1. Asian Range Liquidity Pools</h4>
-                                  <p className="text-[11px] text-gray-400 font-light leading-relaxed">
-                                      The low-volume Asian consolidation builds up **Buy-side Liquidity (BSL)** above the range high and **Sell-side Liquidity (SSL)** below the range low.
-                                  </p>
+                  <div className="grid lg:grid-cols-12 gap-8 items-start mb-8">
+                      {/* Left: Interactive Tab Buttons */}
+                      <div className="lg:col-span-4 flex flex-col gap-3">
+                          <button
+                              onClick={() => setActivePhase('accumulation')}
+                              className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
+                                  activePhase === 'accumulation'
+                                      ? 'border-brandGold/30 bg-brandGold/15 hover:border-brandGold/50'
+                                      : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
+                              }`}
+                          >
+                              <div className="space-y-1">
+                                  <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 1</span>
+                                  <span className="font-bold text-xs uppercase tracking-wider text-brandGold font-display flex items-center gap-2">
+                                      <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> Accumulation
+                                  </span>
                               </div>
-                              <div className="bg-black/20 p-4 rounded-lg border border-white/5">
-                                  <h4 className="text-red-400 font-bold text-xs uppercase mb-1">2. London Manipulation (Judas Swing)</h4>
-                                  <p className="text-[11px] text-gray-400 font-light leading-relaxed">
-                                      London Open Killzone frequently triggers a sharp run in the *opposite* direction of the daily trend to sweep Asian BSL or SSL, catching retail breakout traders before reversing.
-                                  </p>
+                              <span className="text-xs text-brandGold/60 group-hover:translate-x-1 transition-transform">→</span>
+                          </button>
+
+                          <button
+                              onClick={() => setActivePhase('manipulation')}
+                              className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
+                                  activePhase === 'manipulation'
+                                      ? 'border-red-500/30 bg-red-500/10 hover:border-red-500/50'
+                                      : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
+                              }`}
+                          >
+                              <div className="space-y-1">
+                                  <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 2</span>
+                                  <span className="font-bold text-xs uppercase tracking-wider text-red-400 font-display flex items-center gap-2">
+                                      <span className="w-2 h-2 rounded-full bg-red-500"></span> Manipulation
+                                  </span>
                               </div>
-                              <div className="bg-black/20 p-4 rounded-lg border border-white/5">
-                                  <h4 className="text-green-400 font-bold text-xs uppercase mb-1">3. New York Distribution / Expansion</h4>
-                                  <p className="text-[11px] text-gray-400 font-light leading-relaxed">
-                                      Following the London sweep, New York sweeps remaining liquidity pools or retraces to high-volume discount arrays (FVGs, Order Blocks) to expand towards HTF targets.
-                                  </p>
+                              <span className="text-xs text-red-400/60 group-hover:translate-x-1 transition-transform">→</span>
+                          </button>
+
+                          <button
+                              onClick={() => setActivePhase('distribution')}
+                              className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
+                                  activePhase === 'distribution'
+                                      ? 'border-green-500/30 bg-green-500/10 hover:border-green-500/50'
+                                      : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
+                              }`}
+                          >
+                              <div className="space-y-1">
+                                  <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 3</span>
+                                  <span className="font-bold text-xs uppercase tracking-wider text-green-400 font-display flex items-center gap-2">
+                                      <span className="w-2 h-2 rounded-full bg-green-500"></span> Distribution
+                                  </span>
                               </div>
-                          </div>
+                              <span className="text-xs text-green-400/60 group-hover:translate-x-1 transition-transform">→</span>
+                          </button>
                       </div>
 
-                      {/* Right Panel: SVG Diagram */}
-                      <div className="bg-black/40 border border-white/10 p-6 rounded-xl flex flex-col items-center justify-center min-h-[380px] relative">
-                          <div className="absolute top-4 left-4 text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Sweep Schematic</div>
+                      {/* Middle: Content updates based on active phase */}
+                      <div className="lg:col-span-8 bg-black/30 border border-white/5 p-6 rounded-xl min-h-[220px] flex flex-col justify-between">
+                          {activePhase === 'accumulation' && (
+                              <div className="space-y-4">
+                                  <div className="flex items-center gap-2 text-brandGold font-bold text-xs uppercase tracking-wider">
+                                      <span>🔒</span> The Setup: Asian Session Consolidation
+                                  </div>
+                                  <p className="text-xs text-gray-300 font-light leading-relaxed">
+                                      During the Asian session (low market volume), the interbank algorithm keeps the price confined within a tight range. This consolidation acts as a bait. As retail traders buy and sell the boundaries, they place their stop-losses (liquidity) directly above the highs (Buy-side Liquidity) and below the lows (Sell-side Liquidity).
+                                  </p>
+                                  <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 text-[11px] text-gray-400">
+                                      <span className="text-brandGold font-bold block uppercase mb-1">Student Checklist:</span>
+                                      Do NOT trade breakouts here. Just mark the high and low of the Asian Range and wait.
+                                  </div>
+                              </div>
+                          )}
+
+                          {activePhase === 'manipulation' && (
+                              <div className="space-y-4">
+                                  <div className="flex items-center gap-2 text-red-400 font-bold text-xs uppercase tracking-wider">
+                                      <span>🕸️</span> The Trap: London Judas Swing
+                                  </div>
+                                  <p className="text-xs text-gray-300 font-light leading-relaxed">
+                                      At London Open, the algorithm triggers a sharp breakout in the *opposite* direction of the daily bias. If daily bias is bullish, price spikes down, sweeping below the Asian Range Low. This triggers retail sell-stops and stops out early buyers. This flood of sell orders provides the necessary counterparty liquidity for banks to buy at discount prices.
+                                  </p>
+                                  <div className="bg-red-500/5 p-3 rounded border border-red-500/25 text-[11px] text-gray-400">
+                                      <span className="text-red-400 font-bold block uppercase mb-1">Student Checklist:</span>
+                                      Look for a sweep of the Asian Range. Wait for a quick price rejection that leaves a long wick pointing to key liquidity pools.
+                                  </div>
+                              </div>
+                          )}
+
+                          {activePhase === 'distribution' && (
+                              <div className="space-y-4">
+                                  <div className="flex items-center gap-2 text-green-400 font-bold text-xs uppercase tracking-wider">
+                                      <span>🚀</span> The Move: New York Expansion
+                                  </div>
+                                  <p className="text-xs text-gray-300 font-light leading-relaxed">
+                                      After the manipulation sweep is complete, the algorithm aggressively drives price in the true direction of the day (New York expansion). Price runs cleanly toward the opposing pool of liquidity (Asian Range High or Previous Daily High) to distribute positions to late breakout buyers.
+                                  </p>
+                                  <div className="bg-green-500/5 p-3 rounded border border-green-500/25 text-[11px] text-gray-400">
+                                      <span className="text-green-400 font-bold block uppercase mb-1">Student Checklist:</span>
+                                      Identify the displacement on lower timeframes (5m/1m). Enter trades on retracements into Fair Value Gaps (FVG) or institutional Order Blocks (OB) and target the opposite session high.
+                                  </div>
+                              </div>
+                          )}
+                      </div>
+                  </div>
+
+                  {/* Bottom: Dynamic SVG Graphic */}
+                  <div className="space-y-4 mt-8">
+                      <h4 className="text-brandGold font-bold uppercase tracking-wider text-xs font-display text-center">Interactive PO3 Timeline Schematic</h4>
+                      <div className="bg-black/40 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center min-h-[300px] relative">
+                          <div className="absolute top-4 left-4 text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Dynamic Schematic</div>
                           
-                          <svg width="340" height="260" viewBox="0 0 340 260" className="w-full max-w-[340px] select-none">
-                              <line x1="20" y1="130" x2="320" y2="130" stroke="rgba(255,255,255,0.03)" stroke-width="1" stroke-dasharray="2,2" />
-                              <rect x="30" y="90" width="100" height="80" fill="rgba(59, 130, 246, 0.05)" stroke="rgba(59, 130, 246, 0.2)" stroke-width="1" stroke-dasharray="4,4" rx="4" />
-                              <text x="80" y="80" fill="#60a5fa" font-size="8" font-family="monospace" text-anchor="middle">ASIAN CONSOLIDATION</text>
-                              <text x="80" y="105" fill="rgba(255, 255, 255, 0.3)" font-size="7" font-family="monospace" text-anchor="middle">Equal Highs (BSL)</text>
-                              <text x="80" y="155" fill="rgba(255, 255, 255, 0.3)" font-size="7" font-family="monospace" text-anchor="middle">Equal Lows (SSL)</text>
-                              <path d="M 20,120 L 30,125 L 45,115 L 60,145 L 75,120 L 90,135 L 110,125 L 130,130 L 150,210 L 175,170 L 200,90 L 230,60 L 260,80 L 285,40 L 320,30" fill="none" stroke="#facc15" stroke-width="2" />
-                              <circle cx="150" cy="210" r="4" fill="#ef4444" />
-                              <path d="M 150,210 L 150,230" stroke="#ef4444" stroke-width="1" stroke-dasharray="2,2" />
-                              <text x="150" y="240" fill="#ef4444" font-size="8" font-family="monospace" text-anchor="middle" font-weight="bold">LONDON SSL SWEEP</text>
-                              <text x="150" y="250" fill="rgba(239, 68, 68, 0.6)" font-size="7" font-family="monospace" text-anchor="middle">(Judas Swing)</text>
-                              <circle cx="230" cy="60" r="4" fill="#22c55e" />
-                              <text x="235" y="55" fill="#22c55e" font-size="8" font-family="monospace" font-weight="bold">NY CONTINUATION</text>
+                          <svg width="600" height="240" viewBox="0 0 600 240" className="w-full max-w-[600px] select-none">
+                              {/* Background grids */}
+                              <line x1="20" y1="120" x2="580" y2="120" stroke="rgba(255,255,255,0.03)" strokeWidth="1" strokeDasharray="2,2" />
+                              
+                              {/* Asian consolidation range box */}
+                              <rect
+                                  x="40"
+                                  y="80"
+                                  width="180"
+                                  height="80"
+                                  fill={activePhase === 'accumulation' ? "rgba(234, 179, 8, 0.15)" : "rgba(59, 130, 246, 0.02)"}
+                                  stroke={activePhase === 'accumulation' ? "#facc15" : "rgba(59, 130, 246, 0.1)"}
+                                  strokeWidth={activePhase === 'accumulation' ? 1.5 : 1}
+                                  strokeDasharray={activePhase === 'accumulation' ? "none" : "4,4"}
+                                  rx="4"
+                                  className="transition-all duration-500"
+                              />
+                              <text x="130" y="70" fill={activePhase === 'accumulation' ? "#facc15" : "rgba(255,255,255,0.2)"} fontSize="8" fontFamily="monospace" textAnchor="middle" fontWeight="bold">
+                                  ASIAN CONSOLIDATION (ACCUMULATION)
+                              </text>
+                              <text x="130" y="105" fill={activePhase === 'accumulation' ? "#60a5fa" : "rgba(255, 255, 255, 0.15)"} fontSize="7" fontFamily="monospace" textAnchor="middle">
+                                  Equal Highs (Buy Stops)
+                              </text>
+                              <text x="130" y="145" fill={activePhase === 'accumulation' ? "#ef4444" : "rgba(255, 255, 255, 0.15)"} fontSize="7" fontFamily="monospace" textAnchor="middle">
+                                  Equal Lows (Sell Stops)
+                              </text>
+
+                              {/* Price paths divided into three sections */}
+                              {/* 1. Accumulation path */}
+                              <path
+                                  d="M 30,120 L 50,125 L 70,115 L 90,140 L 110,110 L 130,135 L 150,115 L 170,130 L 190,120 L 210,130 L 220,120"
+                                  fill="none"
+                                  stroke={activePhase === 'accumulation' ? "#facc15" : "rgba(255,255,255,0.2)"}
+                                  strokeWidth={activePhase === 'accumulation' ? 3 : 2}
+                                  className="transition-all duration-500"
+                              />
+
+                              {/* 2. Manipulation path (Judas Swing) */}
+                              <path
+                                  d="M 220,120 L 255,200"
+                                  fill="none"
+                                  stroke={activePhase === 'manipulation' ? "#ef4444" : "rgba(255,255,255,0.2)"}
+                                  strokeWidth={activePhase === 'manipulation' ? 4 : 2}
+                                  className="transition-all duration-500"
+                              />
+                              <line
+                                  x1="220"
+                                  y1="200"
+                                  x2="290"
+                                  y2="200"
+                                  stroke={activePhase === 'manipulation' ? "#ef4444" : "rgba(255,255,255,0.05)"}
+                                  strokeWidth="1"
+                                  strokeDasharray="2,2"
+                              />
+                              <circle
+                                  cx="255"
+                                  cy="200"
+                                  r={activePhase === 'manipulation' ? 5 : 3.5}
+                                  fill={activePhase === 'manipulation' ? "#ef4444" : "rgba(255,255,255,0.2)"}
+                                  className="transition-all duration-500"
+                              />
+                              <text
+                                  x="255"
+                                  y="220"
+                                  fill={activePhase === 'manipulation' ? "#ef4444" : "rgba(255,255,255,0.15)"}
+                                  fontSize="8"
+                                  fontFamily="monospace"
+                                  textAnchor="middle"
+                                  fontWeight="bold"
+                              >
+                                  LONDON SSL SWEEP (MANIPULATION)
+                              </text>
+
+                              {/* 3. Distribution path */}
+                              <path
+                                  d="M 255,200 L 280,165 L 305,100 L 330,120 L 360,60 L 390,80 L 420,40 L 450,60 L 490,30 L 530,45 L 570,25"
+                                  fill="none"
+                                  stroke={activePhase === 'distribution' ? "#22c55e" : "rgba(255,255,255,0.2)"}
+                                  strokeWidth={activePhase === 'distribution' ? 3 : 2}
+                                  className="transition-all duration-500"
+                              />
+                              <circle
+                                  cx="360"
+                                  cy="60"
+                                  r={activePhase === 'distribution' ? 4 : 3}
+                                  fill={activePhase === 'distribution' ? "#22c55e" : "rgba(255,255,255,0.2)"}
+                                  className="transition-all duration-500"
+                              />
+                              <text
+                                  x="365"
+                                  y="50"
+                                  fill={activePhase === 'distribution' ? "#22c55e" : "rgba(255,255,255,0.15)"}
+                                  fontSize="8"
+                                  fontFamily="monospace"
+                                  fontWeight="bold"
+                              >
+                                  NY CONTINUATION (DISTRIBUTION)
+                              </text>
                           </svg>
                       </div>
                   </div>
