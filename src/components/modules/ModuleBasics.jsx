@@ -126,7 +126,7 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.3 Currency Pairs */}
+      {/* 1.3 Currency Pairs & Commodities */}
       <section id="pairs" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="text-center mb-10">
@@ -138,7 +138,7 @@ export default function ModuleBasics() {
               {/* Asset Reference Grid */}
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                   {/* Currencies Panel */}
-                  <div className="glass-panel p-6 rounded-xl border-l-2 border-l-brandGold">
+                  <div className="glass-panel p-6 rounded-xl border-l-2 border-l-brandGold bg-black/40 border border-white/5">
                       <h3 className="text-brandGold font-bold font-display uppercase text-sm tracking-wider mb-4 flex items-center gap-2">
                           <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
                           Core Currencies
@@ -164,7 +164,7 @@ export default function ModuleBasics() {
                   </div>
 
                   {/* Commodities Panel */}
-                  <div className="glass-panel p-6 rounded-xl border-r-2 border-r-brandGold">
+                  <div className="glass-panel p-6 rounded-xl border-r-2 border-r-brandGold bg-black/40 border border-white/5">
                       <h3 className="text-brandGold font-bold font-display uppercase text-sm tracking-wider mb-4 flex items-center gap-2">
                           <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
                           Core Commodities
@@ -199,7 +199,7 @@ export default function ModuleBasics() {
               </div>
 
               {/* Pairs Table */}
-              <div className="glass-panel border border-white/10 p-1 rounded-xl">
+              <div className="glass-panel border border-white/10 p-1 rounded-xl bg-black/40">
                   <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse min-w-[700px]">
                           <thead>
@@ -298,6 +298,28 @@ export default function ModuleBasics() {
           </div>
           {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#broker-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.4 Broker, Demo Account, Bid/Ask */}
+      <section id="broker-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.4</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Broker, Demo Account, Bid/Ask</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <BrokerVisualizer />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#pips-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -307,11 +329,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.4 What is a PIP? */}
+      {/* 1.5 What is a PIP? */}
       <section id="pips-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.4</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.5</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">What is a PIP?</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
@@ -329,11 +351,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.5 What is a Lot? */}
+      {/* 1.6 What is a Lot? */}
       <section id="lots-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.5</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.6</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">What is a Lot?</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
@@ -351,11 +373,11 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.6 What is Spread in Forex? */}
+      {/* 1.7 What is Spread in Forex? */}
       <section id="spread-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.6</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">What is Spread in Forex?</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
@@ -373,81 +395,15 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.7 What is Leverage & Margin in Forex? */}
+      {/* 1.8 Leverage & Margin */}
       <section id="leverage-margin-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.7</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Leverage & Margin</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
                   <LeverageMarginVisualizer />
-              </div>
-          </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#broker-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
-
-      {/* 1.8 What is a Forex Broker? */}
-      <section id="broker-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.8</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">What is a Forex Broker?</h2>
-              </div>
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <BrokerVisualizer />
-              </div>
-          </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#revision-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
-
-      {/* 1.9 Quick Revision for Students */}
-      <section id="revision-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Quick Revision</h2>
-              </div>
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <RevisionVisualizer />
-              </div>
-          </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#profit-simulator" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
-
-      {/* 1.10 Profit & Loss Simulator */}
-      <section id="profit-simulator" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Profit & Loss Simulator</h2>
-              </div>
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <ProfitCalculator />
               </div>
           </div>
           {/* Next Arrow */}
@@ -461,12 +417,12 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.11 How Do Traders Make Money? */}
+      {/* 1.9 Buy/Long and Sell/Short */}
       <section id="mechanics" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.11</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">How Do Traders Make Money?</h2>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.9</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Buy/Long and Sell/Short</h2>
               </div>
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14">
                   <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Two directions to trade the market:</p>
@@ -533,6 +489,28 @@ export default function ModuleBasics() {
           </div>
           {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#profit-simulator" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.10 Profit & Loss Simulator */}
+      <section id="profit-simulator" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.10</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Profit & Loss Simulator</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <ProfitCalculator />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#trader-types" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -542,97 +520,236 @@ export default function ModuleBasics() {
           </div>
       </section>
 
-      {/* 1.12 Types of Traders */}
+      {/* 1.11 Types of Traders & Market Impact */}
       <section id="trader-types" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col space-y-12">
+              <div className="text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.11</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Types of Traders & Market Impact</h2>
+              </div>
+
+              {/* Part A: Market Impact Tiers */}
+              <div>
+                  <h3 className="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-3 border-b border-white/5 pb-2">Part A: Market Impact Tiers</h3>
+                  <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                      Not all participants trade at the same scale. The market is structured in tiers, and price direction is set entirely by the largest institutions.
+                  </p>
+                  
+                  {/* Trader Categories Grid */}
+                  <div className="grid md:grid-cols-3 gap-8 mb-8">
+                      {/* Retail Card */}
+                      <div className="glass-panel border-t-4 border-t-rose-500 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-center mb-6">
+                                  <span className="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 3: Retail</span>
+                                  <span className="text-2xl">👤</span>
+                              </div>
+                              <h4 className="text-xl font-bold text-white mb-3 font-display">Retail Traders</h4>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                                  Individual retail market participants trading their personal accounts via brokers. They act as liquidity takers with zero impact on underlying prices.
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-white">Daily / Short</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">MAX LOTS</span><span className="text-rose-400 font-semibold">10 Lots ($1M)</span></div>
+                              <div className="mt-4">
+                                  <span className="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
+                                  <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                                      <div className="bg-rose-500 h-full w-[5%]"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      {/* Professional Card */}
+                      <div className="glass-panel border-t-4 border-t-brandGold p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-center mb-6">
+                                  <span className="bg-brandGold/10 text-brandGold text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 2: Professional</span>
+                                  <span className="text-2xl">💼</span>
+                              </div>
+                              <h4 className="text-xl font-bold text-white mb-3 font-display">Prop & Fund Traders</h4>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                                  Traders utilizing prop firm capitals or managing small boutique funds. They execute larger blocks of trades that may cause minor local slippage.
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-white">Intraday / Swing</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">MAX LOTS</span><span className="text-brandGold font-semibold">100 Lots ($10M)</span></div>
+                              <div className="mt-4">
+                                  <span className="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
+                                  <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                                      <div className="bg-brandGold h-full w-[20%]"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      {/* Institutional Card */}
+                      <div className="glass-panel border-t-4 border-t-emerald-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-center mb-6">
+                                  <span className="bg-emerald-400/10 text-emerald-400 text-xs px-2.5 py-1 rounded font-mono font-semibold uppercase">Tier 1: Institution</span>
+                                  <span className="text-2xl">🏢</span>
+                              </div>
+                              <h4 className="text-xl font-bold text-white mb-3 font-display">Banks & Market Makers</h4>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                                  Central banks, Tier-1 institutions, and massive hedge funds. Their trades are market-moving and must be split using algorithmic executions (like TWAP/VWAP).
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-white">Weekly / Macro</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">MAX LOTS</span><span className="text-emerald-400 font-semibold">1,000 - 10,000+ Lots</span></div>
+                              <div className="mt-4">
+                                  <span className="text-[10px] text-gray-500 block mb-1">MARKET IMPACT SCALE</span>
+                                  <div className="w-full bg-white/5 h-2 rounded-full overflow-hidden">
+                                      <div className="bg-emerald-400 h-full w-[100%]"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  {/* Brush vs Crowd Analogy Widget */}
+                  <div className="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40 mb-6">
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl"></div>
+                      
+                      <h4 className="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
+                          🎨 The "Brush" vs. "The Crowd"
+                      </h4>
+                      <p className="text-gray-400 text-xs font-light mb-6">
+                          A simple analogy explaining the massive power imbalance in Forex market structure.
+                      </p>
+
+                      <div className="grid md:grid-cols-2 gap-8 text-xs font-light text-gray-300 leading-relaxed">
+                          <div className="space-y-3">
+                              <h5 className="text-white font-bold font-display uppercase tracking-wider text-xs">The Brush (Institutions)</h5>
+                              <p>
+                                  Wields concentrated volume. For example, <strong>5 major institutions</strong> placing <strong>100 standard lots</strong> each, resulting in a unified, market-moving block of <strong>500 lots</strong>. They "paint" the charts, sweep liquidity, and dictate direction.
+                              </p>
+                          </div>
+                          <div className="space-y-3">
+                              <h5 className="text-white font-bold font-display uppercase tracking-wider text-xs">The Crowd (Retail)</h5>
+                              <p>
+                                  Highly fragmented and weak. For example, <strong>800 retail traders</strong> placing <strong>0.5 standard lots</strong> each, resulting in <strong>400 lots</strong>. Since retail trades are scattered and cancel each other out, they have zero market impact and serve as counterparties for the institutions.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              {/* Part B: Personal Trading Styles */}
+              <div className="border-t border-white/10 pt-10">
+                  <h3 className="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-3 border-b border-white/5 pb-2">Part B: Personal Trading Styles</h3>
+                  <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+                      Traders are also classified by the duration of their holding times and chart execution speeds:
+                  </p>
+
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                      {/* Scalper Card */}
+                      <div className="glass-panel border-t-4 border-t-sky-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-sky-400/10 transition-all duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-start mb-4">
+                                  <span className="bg-sky-400/20 text-sky-400 px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Scalper</span>
+                                  <span className="text-gray-500 group-hover:text-sky-400 transition-colors duration-300">⚡</span>
+                              </div>
+                              <h3 className="text-xl font-bold text-white mb-2 font-display">Scalping</h3>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
+                                  Captures tiny price movements within seconds or minutes. Extreme speed and high trade volume.
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-sky-400 font-semibold">1m - 5m</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Secs - Mins</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Intense</span></div>
+                          </div>
+                      </div>
+
+                      {/* Day Trader Card */}
+                      <div className="glass-panel border-t-4 border-t-brandGold p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-brandGold/10 transition-all duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-start mb-4">
+                                  <span className="bg-brandGold/20 text-brandGold px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Day Trader</span>
+                                  <span className="text-gray-500 group-hover:text-brandGold transition-colors duration-300">☀️</span>
+                              </div>
+                              <h3 className="text-xl font-bold text-white mb-2 font-display">Day Trading</h3>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
+                                  Opens and closes positions within the same trading day. Avoids overnight carrying risk.
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-brandGold font-semibold">5m - 1h</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Hours</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Moderate</span></div>
+                          </div>
+                      </div>
+
+                      {/* Swing Trader Card */}
+                      <div className="glass-panel border-t-4 border-t-purple-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-purple-400/10 transition-all duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-start mb-4">
+                                  <span className="bg-purple-400/20 text-purple-400 px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Swing Trader</span>
+                                  <span className="text-gray-500 group-hover:text-purple-400 transition-colors duration-300">🌊</span>
+                              </div>
+                              <h3 className="text-xl font-bold text-white mb-2 font-display">Swing Trading</h3>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
+                                  Holds trades for days or weeks to ride medium-term market swings and structures.
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-purple-400 font-semibold">4h - Daily</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Days - Weeks</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Relaxed</span></div>
+                          </div>
+                      </div>
+
+                      {/* Position Trader Card */}
+                      <div className="glass-panel border-t-4 border-t-emerald-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-emerald-400/10 transition-all duration-300 group bg-black/40 border border-white/5">
+                          <div>
+                              <div className="flex justify-between items-start mb-4">
+                                  <span className="bg-emerald-400/20 text-emerald-400 px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Position Trader</span>
+                                  <span className="text-gray-500 group-hover:text-emerald-400 transition-colors duration-300">🏢</span>
+                              </div>
+                              <h3 className="text-xl font-bold text-white mb-2 font-display">Position Trading</h3>
+                              <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
+                                  Long-term investing based on macroeconomic trends and monthly bias.
+                              </p>
+                          </div>
+                          <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
+                              <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-emerald-400 font-semibold">Daily - Monthly</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Weeks - Years</span></div>
+                              <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Macro</span></div>
+                          </div>
+                      </div>
+                  </div>
+
+                  {/* Interactive Quiz Widget */}
+                  <TraderQuiz />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#revision-section" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 1.12 Quick Revision */}
+      <section id="revision-section" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 1.12</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Types of Traders</h2>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Quick Revision</h2>
               </div>
-
-              {/* Cards Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                  {/* Scalper Card */}
-                  <div className="glass-panel border-t-4 border-t-sky-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-sky-400/10 transition-all duration-300 group">
-                      <div>
-                          <div className="flex justify-between items-start mb-4">
-                              <span className="bg-sky-400/20 text-sky-400 px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Scalper</span>
-                              <span className="text-gray-500 group-hover:text-sky-400 transition-colors duration-300">⚡</span>
-                          </div>
-                          <h3 className="text-xl font-bold text-white mb-2 font-display">Scalping</h3>
-                          <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
-                              Captures tiny price movements within seconds or minutes. Extreme speed and high trade volume.
-                          </p>
-                      </div>
-                      <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                          <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-sky-400 font-semibold">1m - 5m</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Secs - Mins</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Intense</span></div>
-                      </div>
-                  </div>
-
-                  {/* Day Trader Card */}
-                  <div className="glass-panel border-t-4 border-t-brandGold p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-brandGold/10 transition-all duration-300 group">
-                      <div>
-                          <div className="flex justify-between items-start mb-4">
-                              <span className="bg-brandGold/20 text-brandGold px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Day Trader</span>
-                              <span className="text-gray-500 group-hover:text-brandGold transition-colors duration-300">☀️</span>
-                          </div>
-                          <h3 className="text-xl font-bold text-white mb-2 font-display">Day Trading</h3>
-                          <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
-                              Opens and closes positions within the same trading day. Avoids overnight carrying risk.
-                          </p>
-                      </div>
-                      <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                          <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-brandGold font-semibold">5m - 1h</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Hours</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Moderate</span></div>
-                      </div>
-                  </div>
-
-                  {/* Swing Trader Card */}
-                  <div className="glass-panel border-t-4 border-t-purple-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-purple-400/10 transition-all duration-300 group">
-                      <div>
-                          <div className="flex justify-between items-start mb-4">
-                              <span className="bg-purple-400/20 text-purple-400 px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Swing Trader</span>
-                              <span className="text-gray-500 group-hover:text-purple-400 transition-colors duration-300">🌊</span>
-                          </div>
-                          <h3 className="text-xl font-bold text-white mb-2 font-display">Swing Trading</h3>
-                          <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
-                              Holds trades for days or weeks to ride medium-term market swings and structures.
-                          </p>
-                      </div>
-                      <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                          <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-purple-400 font-semibold">4h - Daily</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Days - Weeks</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Relaxed</span></div>
-                      </div>
-                  </div>
-
-                  {/* Position Trader Card */}
-                  <div className="glass-panel border-t-4 border-t-emerald-400 p-6 rounded-xl flex flex-col justify-between hover:scale-[1.03] hover:shadow-lg hover:shadow-emerald-400/10 transition-all duration-300 group">
-                      <div>
-                          <div className="flex justify-between items-start mb-4">
-                              <span className="bg-emerald-400/20 text-emerald-400 px-3 py-1 rounded text-xs font-bold tracking-wider font-display uppercase">Position Trader</span>
-                              <span className="text-gray-500 group-hover:text-emerald-400 transition-colors duration-300">🏢</span>
-                          </div>
-                          <h3 className="text-xl font-bold text-white mb-2 font-display">Position Trading</h3>
-                          <p className="text-gray-400 text-xs font-light leading-relaxed mb-4">
-                              Long-term investing based on macroeconomic trends and monthly bias.
-                          </p>
-                      </div>
-                      <div className="border-t border-white/5 pt-4 mt-auto space-y-2 text-xs font-mono">
-                          <div className="flex justify-between"><span className="text-gray-500">TIMEFRAME</span><span className="text-emerald-400 font-semibold">Daily - Monthly</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">HOLD TIME</span><span className="text-white">Weeks - Years</span></div>
-                          <div className="flex justify-between"><span className="text-gray-500">PACE</span><span className="text-white">Macro</span></div>
-                      </div>
-                  </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <RevisionVisualizer />
               </div>
-
-              {/* Interactive Quiz Widget */}
-              <TraderQuiz />
           </div>
-          {/* Next Arrow (Points to Module 2) */}
+          {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#module2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Module</span>

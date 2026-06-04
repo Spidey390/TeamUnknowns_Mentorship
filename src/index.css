@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
 @layer base {
   body {
     background-color: #121212;
@@ -43,4 +48,205 @@
   position: absolute;
   pointer-events: none;
   opacity: 0.1;
+}
+
+@layer components {
+  section[id^="module"],
+  section[id^="topic"],
+  section[id="pairs"],
+  section[id="pips-section"],
+  section[id="lots-section"],
+  section[id="spread-section"],
+  section[id="leverage-margin-section"],
+  section[id="broker-section"],
+  section[id="revision-section"],
+  section[id="profit-simulator"],
+  section[id="mechanics"],
+  section[id="trader-types"] {
+  }
+
+  section[id^="module"] h1 {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+  }
+
+  section[id^="topic"] h2,
+  section[id="pairs"] h2,
+  section[id="pips-section"] h2,
+  section[id="lots-section"] h2,
+  section[id="spread-section"] h2,
+  section[id="leverage-margin-section"] h2,
+  section[id="broker-section"] h2,
+  section[id="revision-section"] h2,
+  section[id="profit-simulator"] h2,
+  section[id="mechanics"] h2,
+  section[id="trader-types"] h2 {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 88px;
+  }
+
+  main {
+  }
+
+  section[id^="module"],
+  section[id^="topic"],
+  section[id="pairs"],
+  section[id="pips-section"],
+  section[id="lots-section"],
+  section[id="spread-section"],
+  section[id="leverage-margin-section"],
+  section[id="broker-section"],
+  section[id="revision-section"],
+  section[id="profit-simulator"],
+  section[id="mechanics"],
+  section[id="trader-types"] {
+    min-height: calc(100svh - 88px) !important;
+  }
+
+  section[id^="module"] {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  section[id^="topic"],
+  section[id="pairs"],
+  section[id="pips-section"],
+  section[id="lots-section"],
+  section[id="spread-section"],
+  section[id="leverage-margin-section"],
+  section[id="broker-section"],
+  section[id="revision-section"],
+  section[id="profit-simulator"],
+  section[id="mechanics"],
+  section[id="trader-types"] {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 96px;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding-bottom: 3rem !important;
+  }
+
+  section[id^="module"],
+  section[id^="topic"],
+  section[id="pairs"],
+  section[id="pips-section"],
+  section[id="lots-section"],
+  section[id="spread-section"],
+  section[id="leverage-margin-section"],
+  section[id="broker-section"],
+  section[id="revision-section"],
+  section[id="profit-simulator"],
+  section[id="mechanics"],
+  section[id="trader-types"] {
+    min-height: auto !important;
+    padding: 3.5rem 1rem !important;
+  }
+
+  section[id^="module"] {
+    min-height: calc(100svh - 88px) !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  section[id^="module"] h1 {
+    font-size: clamp(2.8rem, 17vw, 4.5rem);
+    line-height: 0.9;
+  }
+
+  section[id^="module"] p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  section[id^="topic"] h2,
+  section[id="pairs"] h2,
+  section[id="pips-section"] h2,
+  section[id="lots-section"] h2,
+  section[id="spread-section"] h2,
+  section[id="leverage-margin-section"] h2,
+  section[id="broker-section"] h2,
+  section[id="revision-section"] h2,
+  section[id="profit-simulator"] h2,
+  section[id="mechanics"] h2,
+  section[id="trader-types"] h2 {
+    font-size: clamp(1.65rem, 8vw, 2.4rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  .glass-panel {
+    border-radius: 0.75rem;
+  }
+
+  .glass-panel,
+  .glass-panel.p-8,
+  .glass-panel.p-10,
+  .glass-panel.p-14 {
+    padding: 1.25rem !important;
+  }
+
+  section .absolute.bottom-8.left-1\/2 {
+    position: static !important;
+    transform: none !important;
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    font-size: 0.75rem;
+  }
+
+  pre,
+  .overflow-x-auto {
+    max-width: 100%;
+   -webkit-overflow-scrolling: touch;
+  }
+
+  svg {
+    max-width: 100%;
+  }
+
+  .circle-accent,
+  main > .absolute {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  section .flex.items-start.gap-6 {
+    gap: 0.75rem;
+  }
+
+  section .text-5xl {
+    font-size: 2.25rem;
+  }
+
+  .grid.grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid.grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid.grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }

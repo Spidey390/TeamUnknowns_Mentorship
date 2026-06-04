@@ -106,10 +106,10 @@ export default function PatternExplorer() {
   const selected = patternData[activePattern];
 
   return (
-    <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-      <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Select a pattern below to inspect its anatomy and institutional psychology:</p>
+    <div className="glass-panel border-t-4 border-t-brandGold p-6 md:p-8 rounded-xl">
+      <p className="text-gray-400 font-light mb-6 text-sm uppercase tracking-wider">Select a pattern below to inspect its anatomy and institutional psychology:</p>
       
-      <div className="grid lg:grid-cols-3 gap-8 items-start">
+      <div className="grid lg:grid-cols-3 gap-6 items-start">
         {/* Left Panel: Navigation buttons for patterns */}
         <div className="flex flex-col gap-3 lg:col-span-1">
           <button
@@ -229,7 +229,7 @@ export default function PatternExplorer() {
         </div>
 
         {/* Middle Column: SVG Visualization */}
-        <div className="bg-black/40 border border-white/10 p-6 rounded-xl flex flex-col items-center justify-center min-h-[300px] lg:col-span-1 relative">
+        <div className="bg-black/40 border border-white/10 p-6 rounded-xl flex flex-col items-center justify-center min-h-[260px] lg:col-span-1 relative">
           <div className="absolute top-4 left-4 text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">SVG Schematic</div>
           <div id="pattern-svg-container" className="w-full flex justify-center items-center">
             {selected.svg}
@@ -237,7 +237,7 @@ export default function PatternExplorer() {
         </div>
 
         {/* Right Column: Descriptions & Details */}
-        <div className="lg:col-span-1 space-y-6 flex flex-col justify-between h-full min-h-[300px]">
+        <div className="lg:col-span-1 space-y-6 flex flex-col justify-between h-full">
           <div className="space-y-4">
             <div>
               <span className={selected.badgeClass}>{selected.type}</span>

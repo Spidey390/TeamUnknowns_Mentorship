@@ -5,11 +5,11 @@ export default function ModuleArchitecture() {
 
   return (
     <>
-      {/* Module 5 Hero Section (Strategy & Execution) */}
-      <section id="module5" className="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
+      {/* MODULE 6 Hero Section (Strategy & Execution) */}
+      <section id="module6" className="min-h-screen flex flex-col justify-center items-center relative py-24 px-6">
           <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
               <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brandGold text-brandGold font-bold tracking-widest text-xs uppercase mb-10 bg-brandGold/5">
-                  <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 5
+                  <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> MODULE 6
               </div>
               <h1 className="text-6xl md:text-8xl font-black font-display leading-none mb-6 tracking-tight uppercase">
                   Strategy <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-brandGold to-yellow-300">& Execution</span>
@@ -20,7 +20,7 @@ export default function ModuleArchitecture() {
           </div>
           {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#topic-5-1" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+              <a href="#topic-6-1" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -29,11 +29,11 @@ export default function ModuleArchitecture() {
           </div>
       </section>
 
-      {/* Section 5.1: Daily Bias */}
-      <section id="topic-5-1" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      {/* Section 6.1: Daily Bias */}
+      <section id="topic-6-1" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.1</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 6.1</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Daily Bias</h2>
               </div>
 
@@ -78,7 +78,7 @@ export default function ModuleArchitecture() {
           </div>
           {/* Next Arrow */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#topic-5-2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+              <a href="#topic-6-2" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Topic</span>
                   <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -87,11 +87,11 @@ export default function ModuleArchitecture() {
           </div>
       </section>
 
-      {/* Section 5.2: The Silver Bullet Strategy */}
-      <section id="topic-5-2" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+      {/* Section 6.2: The Silver Bullet Strategy */}
+      <section id="topic-6-2" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.2</div>
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 6.2</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">The Silver Bullet Strategy</h2>
               </div>
 

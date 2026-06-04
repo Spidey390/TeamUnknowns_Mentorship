@@ -1,6 +1,7 @@
 import React from 'react';
 import QuoteBuilder from '../QuoteBuilder';
 import PatternExplorer from '../PatternExplorer';
+import TimeframeVisualizer from '../TimeframeVisualizer';
 
 export default function ModuleCandlesticks() {
   return (
@@ -37,7 +38,7 @@ export default function ModuleCandlesticks() {
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Anatomy of a Candlestick</h2>
               </div>
               
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl bg-black/40 border border-white/5">
                   <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Dissecting the structure of price data:</p>
                   
                   <div className="grid md:grid-cols-2 gap-12 items-stretch">
@@ -175,7 +176,7 @@ export default function ModuleCandlesticks() {
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.2</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Interactive EUR/USD Quote Builder</h2>
               </div>
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl bg-black/40 border border-white/5">
                   <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Adjust the sliders to build your own EUR/USD candlestick and see the anatomy adapt in real-time:</p>
                   <QuoteBuilder />
               </div>
@@ -191,16 +192,38 @@ export default function ModuleCandlesticks() {
           </div>
       </section>
 
-      {/* 2.3 Key Candlestick Patterns */}
+      {/* 2.3 Timeframes & Analogy */}
       <section id="topic-2-3" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.3</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Timeframes & Analogy</h2>
+              </div>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl bg-black/40 border border-white/5">
+                  <TimeframeVisualizer />
+              </div>
+          </div>
+          {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#topic-2-4" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* 2.4 Key Candlestick Patterns */}
+      <section id="topic-2-4" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 2.4</div>
                   <h2 className="text-3xl font-black font-display uppercase tracking-wide">Key Candlestick Patterns</h2>
               </div>
               <PatternExplorer />
           </div>
-          {/* Next Arrow */}
+          {/* Next Arrow (Links to Module 3 Hero) */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#module3" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Module</span>

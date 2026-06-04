@@ -6,12 +6,13 @@ import ModuleTradingView from '../components/modules/ModuleTradingView';
 import ModuleCandlesticks from '../components/modules/ModuleCandlesticks';
 import ModuleSessions from '../components/modules/ModuleSessions';
 import ModuleArchitecture from '../components/modules/ModuleArchitecture';
+import ModulePriceAction from '../components/modules/ModulePriceAction';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-32 pb-20 relative">
+      <main className="pb-20 relative">
 
         {/* Abstract background elements */}
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brandGold rounded-full mix-blend-overlay filter blur-[200px] opacity-[0.03] pointer-events-none"></div>
@@ -23,6 +24,7 @@ export default function Home() {
         <ModuleBasics />
         <ModuleCandlesticks />
         <ModuleTradingView />
+        <ModulePriceAction />
         <ModuleSessions />
         <ModuleArchitecture />
 

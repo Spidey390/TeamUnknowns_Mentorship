@@ -96,6 +96,69 @@ export default function BrokerVisualizer() {
         </div>
       </div>
 
+      {/* Demo Account & Bid/Ask Prices */}
+      <div className="grid md:grid-cols-2 gap-6 items-stretch">
+        {/* Demo Account Card */}
+        <div className="bg-black/40 border border-white/5 p-6 rounded-xl flex flex-col justify-between relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-brandGold/5 rounded-full blur-xl"></div>
+          <div>
+            <h4 className="text-brandGold font-bold font-display text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span>🔬</span> Demo Accounts: The Trader's Sandbox
+            </h4>
+            <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+              A demo account is a risk-free practice account funded with virtual money. It operates on real-time market feeds, allowing you to practice without financial risk.
+            </p>
+            <ul className="space-y-3 text-xs text-gray-300 font-light">
+              <li className="flex items-start gap-2">
+                <span className="text-brandGold">•</span>
+                <span><strong className="text-white">Zero Financial Risk:</strong> Learn how to place orders, manage risk, and use indicators with $10,000+ of play money.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brandGold">•</span>
+                <span><strong className="text-white">Real Market Feed:</strong> Spreads, prices, and charts behave exactly as they do in the live environment.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-brandGold">•</span>
+                <span><strong className="text-white">Strategy Testing:</strong> Always test new concepts or execution systems on demo for at least 3-6 months before risking real money.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bid & Ask Card */}
+        <div className="bg-black/40 border border-white/5 p-6 rounded-xl flex flex-col justify-between relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-brandGold/5 rounded-full blur-xl"></div>
+          <div>
+            <h4 className="text-brandGold font-bold font-display text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span>⚖️</span> Bid & Ask: The Two-Way Quote
+            </h4>
+            <p className="text-gray-400 text-xs font-light leading-relaxed mb-6">
+              Forex pairs are always quoted with two prices: the Bid and the Ask.
+            </p>
+            <ul className="space-y-4 text-xs text-gray-300 font-light">
+              <li className="flex items-start gap-3">
+                <span className="bg-green-500/20 text-green-400 px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider font-mono">Ask</span>
+                <div>
+                  <strong className="text-white font-semibold">The Buy Price (Ask):</strong>
+                  <span className="block text-gray-400 mt-0.5">The price you pay to enter a BUY (Long) trade. It is the higher price in the quote.</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="bg-red-500/20 text-red-400 px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider font-mono">Bid</span>
+                <div>
+                  <strong className="text-white font-semibold">The Sell Price (Bid):</strong>
+                  <span className="block text-gray-400 mt-0.5">The price you receive to enter a SELL (Short) trade. It is the lower price in the quote.</span>
+                </div>
+              </li>
+            </ul>
+            <div className="bg-brandGold/5 p-3 rounded border border-brandGold/15 mt-4 text-[10px] font-sans text-gray-400 leading-relaxed">
+              <strong>🚗 Car Dealership Metaphor:</strong> A dealership buys a car from you at a lower price (Bid) and sells it to another customer at a higher price (Ask). The difference is their profit.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       {/* Broker List Grid */}
       <div className="space-y-4">
         <h4 className="text-white font-bold font-display text-xs uppercase tracking-wider text-center">
