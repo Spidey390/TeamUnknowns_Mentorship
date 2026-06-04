@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import OrderSimulator from '../OrderSimulator';
+import PineScriptSection from '../PineScriptSection';
 
 export default function ModuleSessions() {
   const [activePhase, setActivePhase] = useState('accumulation');
@@ -176,7 +177,7 @@ export default function ModuleSessions() {
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl space-y-10">
                   <div className="space-y-4">
                       <p className="text-gray-400 font-light text-sm uppercase tracking-wider mb-2">Understanding the Fuel of the Market:</p>
-                      <p className="text-sm text-gray-300 font-light leading-relaxed">
+                      <p className="text-sm text-gray-300 font-light leading-relaxed font-sans">
                           In trading, **Liquidity** represents the ease with which an asset can be bought or sold without causing a significant change in its price. At its core, liquidity is the **total volume of active buy and sell orders** waiting in the market.
                       </p>
                   </div>
@@ -238,7 +239,7 @@ export default function ModuleSessions() {
               <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl space-y-10">
                   <div>
                       <p className="text-gray-400 font-light text-sm uppercase tracking-wider mb-2">Finding Stop-Loss Clusters on the Charts:</p>
-                      <p className="text-sm text-gray-300 font-light leading-relaxed">
+                      <p className="text-sm text-gray-300 font-light leading-relaxed font-sans">
                           A **Liquidity Pool** is a specific area on a chart where a massive number of pending stop-loss orders are concentrated. Institutions target these pools to fill their own orders.
                       </p>
                   </div>
@@ -273,7 +274,7 @@ export default function ModuleSessions() {
                               </p>
                               <ul className="space-y-2 text-xs text-gray-400 font-light list-disc list-inside">
                                   <li>Stop Losses of Long Buyers (selling back to exit).</li>
-                                  <li>Sell Stop orders of retail breakout sellers.</li>
+                                  <li>Buy Stop orders of retail breakout sellers.</li>
                               </ul>
                           </div>
                           <div className="bg-red-500/5 border border-red-500/10 p-3 rounded text-[11px] font-semibold text-red-400 mt-4">
@@ -316,7 +317,7 @@ export default function ModuleSessions() {
                           {/* Equal Highs / Lows */}
                           <div className="bg-black/30 p-5 rounded-lg border border-white/5 space-y-2">
                               <span className="text-brandGold font-mono text-[10px] font-bold block uppercase">4. Double Tops/Bottoms</span>
-                              <h5 className="text-white font-semibold text-xs">Clean Equal Highs / Lows</h5>
+                              <h5 className="text-white font-semibold text-xs">Equal Highs / Equal Lows</h5>
                               <p className="text-[11px] text-gray-400 font-light leading-relaxed">
                                   Equal Highs (EQH) and Equal Lows (EQL) act as retail "Double Tops" and "Double Bottoms". These build double the stops, creating high-probability targets.
                               </p>
@@ -379,7 +380,7 @@ export default function ModuleSessions() {
                               <text x="530" y="115" fill="#22c55e" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">BSL / BUY STOPS ($ $ $)</text>
                               <line x1="500" y1="310" x2="680" y2="310" stroke="#ef4444" strokeWidth="1.5" strokeDasharray="4,4" opacity="0.4" />
                               <text x="590" y="325" fill="#ef4444" fontSize="9" fontFamily="monospace" textAnchor="middle" opacity="0.8">Equal Lows (Double Bottom)</text>
-                              <text x="590" y="340" fill="#ef4444" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">SSL / SELL STOPS ($ $ $)</text>
+                              <text x="590" y="340" fill="#ef4444" fontSize="9" fontFamily="monospace" textAnchor="middle" font-weight="bold">SSL / SELL STOPS ($ $ $)</text>
                               <path d="M 50,300 L 100,380 L 150,210 L 200,333 L 260,180 L 290,90 L 320,313 L 380,220 L 440,293 L 480,140 L 530,310 L 580,140 L 630,310 L 700,50" fill="none" stroke="#facc15" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                               <circle cx="100" cy="380" r="5" fill="#ef4444" />
                               <text x="100" y="405" fill="#ef4444" fontSize="9" fontFamily="monospace" textAnchor="middle" fontWeight="bold">SSL (Swing Low)</text>
@@ -422,7 +423,7 @@ export default function ModuleSessions() {
               <div className="space-y-8">
                   {/* Apple Market Analogy Widget */}
                   <div className="glass-panel p-6 sm:p-8 rounded-xl border border-white/10 relative overflow-hidden bg-black/40">
-                      <div className="absolute top-0 left-0 w-32 h-32 bg-brandGold/5 rounded-full blur-2xl"></div>
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-brandGold/5 rounded-full blur-2xl"></div>
                       
                       <h4 className="text-lg font-bold font-display uppercase tracking-wider text-brandGold mb-2 flex items-center gap-2">
                           🍎 The Apple Market Analogy
@@ -525,221 +526,201 @@ export default function ModuleSessions() {
           </div>
       </section>
 
-      {/* Section 4.5: Sessions & Killzone Hours */}
+      {/* Section 4.5: Sessions & Kill Zones */}
       <section id="topic-4-5" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
           <div className="w-full max-w-5xl flex flex-col">
               <div className="mb-10 text-center md:text-left">
                   <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.5</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Sessions & Killzone Hours</h2>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Sessions & Kill Zones</h2>
               </div>
               
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">The time-based periods that define volume, volatility, and trading opportunities in Forex:</p>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {/* Asian Session */}
-                      <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
-                          <div>
-                              <div className="flex justify-between items-center mb-3">
-                                  <span className="bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Consolidation</span>
-                                  <span className="text-gray-500 text-xs font-mono">5:30 AM - 9:30 AM IST</span>
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl space-y-12">
+                  <div>
+                      <p className="text-gray-400 font-light mb-4 text-sm uppercase tracking-wider font-mono">1. Market Sessions & Overlaps</p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          {/* Asian Session */}
+                          <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
+                              <div>
+                                  <div className="flex justify-between items-center mb-3">
+                                      <span className="bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Consolidation</span>
+                                      <span className="text-gray-500 text-xs font-mono">5:30 AM - 9:30 AM IST</span>
+                                  </div>
+                                  <h3 className="text-xl font-bold text-white mb-2">Asian Session</h3>
+                                  <p className="text-xs text-gray-400 leading-relaxed mb-4">
+                                      A period of lower volume and tight range consolidation. The market accumulates orders and builds equal highs/lows.
+                                  </p>
                               </div>
-                              <h3 className="text-xl font-bold text-white mb-2">Asian Range</h3>
-                              <p className="text-xs text-gray-400 leading-relaxed mb-4">
-                                  A period of lower volume and tight range consolidation. The market accumulates orders and builds equal highs/lows.
-                              </p>
+                              <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
+                                  <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
+                                  Do not trade the breakouts. The high and low of the Asian session act as major liquidity targets. Expect them to be swept during London or New York.
+                              </div>
                           </div>
-                          <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
-                              <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
-                              Do not trade the breakouts. The high and low of the Asian session act as major liquidity targets. Expect them to be swept during London or New York.
-                          </div>
-                      </div>
 
-                      {/* London Session */}
-                      <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
-                          <div>
-                              <div className="flex justify-between items-center mb-3">
-                                  <span className="bg-red-500/20 text-red-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Manipulation</span>
-                                  <span className="text-gray-500 text-xs font-mono">11:30 AM - 2:30 PM IST</span>
+                          {/* London Session */}
+                          <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
+                              <div>
+                                  <div className="flex justify-between items-center mb-3">
+                                      <span className="bg-red-500/20 text-red-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Manipulation</span>
+                                      <span className="text-gray-500 text-xs font-mono">11:30 AM - 2:30 PM IST</span>
+                                  </div>
+                                  <h3 className="text-xl font-bold text-white mb-2">London Session (Kill Zone)</h3>
+                                  <p className="text-xs text-gray-400 leading-relaxed mb-4">
+                                      Injects massive volume and volatility. It is the session most likely to establish the absolute high or low of the day.
+                                  </p>
                               </div>
-                              <h3 className="text-xl font-bold text-white mb-2">London Session</h3>
-                              <p className="text-xs text-gray-400 leading-relaxed mb-4">
-                                  Injects massive volume and volatility. It is the session most likely to establish the absolute high or low of the day.
-                              </p>
+                              <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
+                                  <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
+                                  Look for the **Judas Swing**—an initial false run that sweeps the Asian Range high/low, followed by an immediate reversal and true expansion.
+                              </div>
                           </div>
-                          <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
-                              <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
-                              Look for the **Judas Swing**—an initial false run that sweeps the Asian Range high/low, followed by an immediate reversal and true expansion.
-                          </div>
-                      </div>
 
-                      {/* New York Session */}
-                      <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
-                          <div>
-                              <div className="flex justify-between items-center mb-3">
-                                  <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Distribution</span>
-                                  <span className="text-gray-500 text-xs font-mono">4:30 PM - 7:30 PM IST</span>
+                          {/* New York Session */}
+                          <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
+                              <div>
+                                  <div className="flex justify-between items-center mb-3">
+                                      <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Distribution</span>
+                                      <span className="text-gray-500 text-xs font-mono">4:30 PM - 7:30 PM IST</span>
+                                  </div>
+                                  <h3 className="text-xl font-bold text-white mb-2">New York Session (Kill Zone)</h3>
+                                  <p className="text-xs text-gray-400 leading-relaxed mb-4">
+                                      High-volume session overlapping with London. Primary US macroeconomic data is released here, driving price expansion.
+                                  </p>
                               </div>
-                              <h3 className="text-xl font-bold text-white mb-2">New York Session</h3>
-                              <p className="text-xs text-gray-400 leading-relaxed mb-4">
-                                  High-volume session overlapping with London. Primary US macroeconomic data is released here, driving price expansion.
-                              </p>
+                              <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
+                                  <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
+                                  Reversal or Continuation. If London established the high/low of the day, NY often retraces to a discount/premium FVG and continues the expansion.
+                              </div>
                           </div>
-                          <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
-                              <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
-                              Reversal or Continuation. If London established the high/low of the day, NY often retraces to a discount/premium FVG and continues the expansion.
-                          </div>
-                      </div>
 
-                      {/* Session Overlaps */}
-                      <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
-                          <div>
-                              <div className="flex justify-between items-center mb-3">
-                                  <span className="bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Peak Volatility</span>
-                                  <span className="text-gray-500 text-xs font-mono">4:30 PM - 8:30 PM IST</span>
+                          {/* Session Overlaps */}
+                          <div className="bg-black/30 p-6 rounded-xl border border-white/5 flex flex-col justify-between hover:border-brandGold/30 transition-all duration-300">
+                              <div>
+                                  <div className="flex justify-between items-center mb-3">
+                                      <span className="bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider font-display">Peak Volatility</span>
+                                      <span className="text-gray-500 text-xs font-mono">4:30 PM - 8:30 PM IST</span>
+                                  </div>
+                                  <h3 className="text-xl font-bold text-white mb-2">London & NY Overlap</h3>
+                                  <p className="text-xs text-gray-400 leading-relaxed mb-4">
+                                      The window when both London and New York financial centers are open. This produces the highest trading volume and sharpest trends of the day.
+                                  </p>
                               </div>
-                              <h3 className="text-xl font-bold text-white mb-2">London & NY Overlap</h3>
-                              <p className="text-xs text-gray-400 leading-relaxed mb-4">
-                                  The window when both London and New York financial centers are open. This produces the highest trading volume and sharpest trends of the day.
-                              </p>
-                          </div>
-                          <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
-                              <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
-                              Excellent for intraday expansions. Watch for quick retracements into institutional arrays and target opposing session extremes.
+                              <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 mt-4 text-xs font-light leading-relaxed">
+                                  <strong className="text-brandGold font-bold uppercase tracking-wider block mb-1">ICT Concept Tip:</strong>
+                                  Excellent for intraday expansions. Watch for quick retracements into institutional arrays and target opposing session extremes.
+                              </div>
                           </div>
                       </div>
                   </div>
-              </div>
-          </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#topic-4-6" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
 
-      {/* Section 4.6: Kill Zones */}
-      <section id="topic-4-6" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.6</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Kill Zones & PO3</h2>
-              </div>
-              
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Why institutions execute trades during specific times of day and how the algorithm behaves:</p>
-                  
-                  <div className="grid lg:grid-cols-12 gap-8 items-start mb-8">
-                      {/* Left: Interactive Tab Buttons */}
-                      <div className="lg:col-span-4 flex flex-col gap-3">
-                          <button
-                              onClick={() => setActivePhase('accumulation')}
-                              className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
-                                  activePhase === 'accumulation'
-                                      ? 'border-brandGold/30 bg-brandGold/15 hover:border-brandGold/50'
-                                      : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
-                              }`}
-                          >
-                              <div className="space-y-1">
-                                  <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 1</span>
-                                  <span className="font-bold text-xs uppercase tracking-wider text-brandGold font-display flex items-center gap-2">
-                                      <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> Accumulation
-                                  </span>
-                              </div>
-                              <span className="text-xs text-brandGold/60 group-hover:translate-x-1 transition-transform">→</span>
-                          </button>
+                  {/* Power of 3 Section */}
+                  <div className="border-t border-white/10 pt-10">
+                      <p className="text-gray-400 font-light mb-4 text-sm uppercase tracking-wider font-mono">2. The Algorithmic Power of 3 (PO3)</p>
+                      
+                      <div className="grid lg:grid-cols-12 gap-8 items-start mb-8">
+                          {/* Left: Interactive Tab Buttons */}
+                          <div className="lg:col-span-4 flex flex-col gap-3">
+                              <button
+                                  onClick={() => setActivePhase('accumulation')}
+                                  className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
+                                      activePhase === 'accumulation'
+                                          ? 'border-brandGold/30 bg-brandGold/15 hover:border-brandGold/50'
+                                          : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
+                                  }`}
+                              >
+                                  <div className="space-y-1">
+                                      <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 1</span>
+                                      <span className="font-bold text-xs uppercase tracking-wider text-brandGold font-display flex items-center gap-2">
+                                          <span className="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span> Accumulation
+                                      </span>
+                                  </div>
+                                  <span className="text-xs text-brandGold/60 group-hover:translate-x-1 transition-transform">→</span>
+                              </button>
 
-                          <button
-                              onClick={() => setActivePhase('manipulation')}
-                              className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
-                                  activePhase === 'manipulation'
-                                      ? 'border-red-500/30 bg-red-500/10 hover:border-red-500/50'
-                                      : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
-                              }`}
-                          >
-                              <div className="space-y-1">
-                                  <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 2</span>
-                                  <span className="font-bold text-xs uppercase tracking-wider text-red-400 font-display flex items-center gap-2">
-                                      <span className="w-2 h-2 rounded-full bg-red-500"></span> Manipulation
-                                  </span>
-                              </div>
-                              <span className="text-xs text-red-400/60 group-hover:translate-x-1 transition-transform">→</span>
-                          </button>
+                              <button
+                                  onClick={() => setActivePhase('manipulation')}
+                                  className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
+                                      activePhase === 'manipulation'
+                                          ? 'border-red-500/30 bg-red-500/10 hover:border-red-500/50'
+                                          : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
+                                  }`}
+                              >
+                                  <div className="space-y-1">
+                                      <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 2</span>
+                                      <span className="font-bold text-xs uppercase tracking-wider text-red-400 font-display flex items-center gap-2">
+                                          <span className="w-2 h-2 rounded-full bg-red-500"></span> Manipulation
+                                      </span>
+                                  </div>
+                                  <span className="text-xs text-red-400/60 group-hover:translate-x-1 transition-transform">→</span>
+                              </button>
 
-                          <button
-                              onClick={() => setActivePhase('distribution')}
-                              className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
-                                  activePhase === 'distribution'
-                                      ? 'border-green-500/30 bg-green-500/10 hover:border-green-500/50'
-                                      : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
-                              }`}
-                          >
-                              <div className="space-y-1">
-                                  <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 3</span>
-                                  <span className="font-bold text-xs uppercase tracking-wider text-green-400 font-display flex items-center gap-2">
-                                      <span className="w-2 h-2 rounded-full bg-green-500"></span> Distribution
-                                  </span>
-                              </div>
-                              <span className="text-xs text-green-400/60 group-hover:translate-x-1 transition-transform">→</span>
-                          </button>
+                              <button
+                                  onClick={() => setActivePhase('distribution')}
+                                  className={`text-left px-5 py-4 rounded-xl border transition-all duration-300 flex justify-between items-center group ${
+                                      activePhase === 'distribution'
+                                          ? 'border-green-500/30 bg-green-500/10 hover:border-green-500/50'
+                                          : 'border-white/5 bg-black/30 hover:border-white/10 hover:bg-white/5'
+                                  }`}
+                              >
+                                  <div className="space-y-1">
+                                      <span className="font-bold text-[10px] uppercase tracking-wider text-gray-500 block">Phase 3</span>
+                                      <span className="font-bold text-xs uppercase tracking-wider text-green-400 font-display flex items-center gap-2">
+                                          <span className="w-2 h-2 rounded-full bg-green-500"></span> Distribution
+                                      </span>
+                                  </div>
+                                  <span className="text-xs text-green-400/60 group-hover:translate-x-1 transition-transform">→</span>
+                              </button>
+                          </div>
+
+                          {/* Middle: Content updates */}
+                          <div className="lg:col-span-8 bg-black/30 border border-white/5 p-6 rounded-xl min-h-[220px] flex flex-col justify-between">
+                              {activePhase === 'accumulation' && (
+                                  <div className="space-y-4">
+                                      <div className="flex items-center gap-2 text-brandGold font-bold text-xs uppercase tracking-wider">
+                                          <span>🔒</span> The Setup: Asian Session Consolidation
+                                      </div>
+                                      <p className="text-xs text-gray-300 font-light leading-relaxed font-sans">
+                                          During the Asian session (low market volume), the interbank algorithm keeps the price confined within a tight range. This consolidation acts as a bait. As retail traders buy and sell the boundaries, they place their stop-losses (liquidity) directly above the highs (Buy-side Liquidity) and below the lows (Sell-side Liquidity).
+                                      </p>
+                                      <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 text-[11px] text-gray-400">
+                                          <span className="text-brandGold font-bold block uppercase mb-1">Student Checklist:</span>
+                                          Do NOT trade breakouts here. Just mark the high and low of the Asian Range and wait.
+                                      </div>
+                                  </div>
+                              )}
+
+                              {activePhase === 'manipulation' && (
+                                  <div className="space-y-4">
+                                      <div className="flex items-center gap-2 text-red-400 font-bold text-xs uppercase tracking-wider">
+                                          <span>🕸️</span> The Trap: London Judas Swing (Kill Zone)
+                                      </div>
+                                      <p className="text-xs text-gray-300 font-light leading-relaxed font-sans">
+                                          At London Open (London Kill Zone), the algorithm triggers a sharp breakout in the *opposite* direction of the daily bias. If daily bias is bullish, price spikes down, sweeping below the Asian Range Low. This triggers retail sell-stops and stops out early buyers, providing the necessary counterparty liquidity for banks to buy at discount prices.
+                                      </p>
+                                      <div className="bg-red-500/5 p-3 rounded border border-red-500/25 text-[11px] text-gray-400">
+                                          <span className="text-red-400 font-bold block uppercase mb-1">Student Checklist:</span>
+                                          Look for a sweep of the Asian Range during London Killzone. Wait for a quick price rejection that leaves a long wick pointing to key liquidity pools.
+                                      </div>
+                                  </div>
+                              )}
+
+                              {activePhase === 'distribution' && (
+                                  <div className="space-y-4">
+                                      <div className="flex items-center gap-2 text-green-400 font-bold text-xs uppercase tracking-wider">
+                                          <span>🚀</span> The Move: New York Expansion (Kill Zone)
+                                      </div>
+                                      <p className="text-xs text-gray-300 font-light leading-relaxed font-sans">
+                                          After the manipulation sweep is complete, the algorithm aggressively drives price in the true direction of the day (New York Kill Zone expansion). Price runs cleanly toward the opposing pool of liquidity (Asian Range High or Previous Daily High) to distribute positions to late breakout buyers.
+                                      </p>
+                                      <div className="bg-green-500/5 p-3 rounded border border-green-500/25 text-[11px] text-gray-400">
+                                          <span className="text-green-400 font-bold block uppercase mb-1">Student Checklist:</span>
+                                          Identify the displacement on lower timeframes (5m/1m). Enter trades on retracements into Fair Value Gaps (FVG) or institutional Order Blocks (OB) during the NY Killzone. Target the opposite session high.
+                                      </div>
+                                  </div>
+                              )}
+                          </div>
                       </div>
 
-                      {/* Middle: Content updates based on active phase */}
-                      <div className="lg:col-span-8 bg-black/30 border border-white/5 p-6 rounded-xl min-h-[220px] flex flex-col justify-between">
-                          {activePhase === 'accumulation' && (
-                              <div className="space-y-4">
-                                  <div className="flex items-center gap-2 text-brandGold font-bold text-xs uppercase tracking-wider">
-                                      <span>🔒</span> The Setup: Asian Session Consolidation
-                                  </div>
-                                  <p className="text-xs text-gray-300 font-light leading-relaxed font-sans">
-                                      During the Asian session (low market volume), the interbank algorithm keeps the price confined within a tight range. This consolidation acts as a bait. As retail traders buy and sell the boundaries, they place their stop-losses (liquidity) directly above the highs (Buy-side Liquidity) and below the lows (Sell-side Liquidity).
-                                  </p>
-                                  <div className="bg-brandGold/5 p-3 rounded border border-brandGold/20 text-[11px] text-gray-400">
-                                      <span className="text-brandGold font-bold block uppercase mb-1">Student Checklist:</span>
-                                      Do NOT trade breakouts here. Just mark the high and low of the Asian Range and wait.
-                                  </div>
-                              </div>
-                          )}
-
-                          {activePhase === 'manipulation' && (
-                              <div className="space-y-4">
-                                  <div className="flex items-center gap-2 text-red-400 font-bold text-xs uppercase tracking-wider">
-                                      <span>🕸️</span> The Trap: London Judas Swing (Kill Zone)
-                                  </div>
-                                  <p className="text-xs text-gray-300 font-light leading-relaxed font-sans">
-                                      At London Open (London Kill Zone), the algorithm triggers a sharp breakout in the *opposite* direction of the daily bias. If daily bias is bullish, price spikes down, sweeping below the Asian Range Low. This triggers retail sell-stops and stops out early buyers, providing the necessary counterparty liquidity for banks to buy at discount prices.
-                                  </p>
-                                  <div className="bg-red-500/5 p-3 rounded border border-red-500/25 text-[11px] text-gray-400">
-                                      <span className="text-red-400 font-bold block uppercase mb-1">Student Checklist:</span>
-                                      Look for a sweep of the Asian Range during London Killzone. Wait for a quick price rejection that leaves a long wick pointing to key liquidity pools.
-                                  </div>
-                              </div>
-                          )}
-
-                          {activePhase === 'distribution' && (
-                              <div className="space-y-4">
-                                  <div className="flex items-center gap-2 text-green-400 font-bold text-xs uppercase tracking-wider">
-                                      <span>🚀</span> The Move: New York Expansion (Kill Zone)
-                                  </div>
-                                  <p className="text-xs text-gray-300 font-light leading-relaxed font-sans">
-                                      After the manipulation sweep is complete, the algorithm aggressively drives price in the true direction of the day (New York Kill Zone expansion). Price runs cleanly toward the opposing pool of liquidity (Asian Range High or Previous Daily High) to distribute positions to late breakout buyers.
-                                  </p>
-                                  <div className="bg-green-500/5 p-3 rounded border border-green-500/25 text-[11px] text-gray-400">
-                                      <span className="text-green-400 font-bold block uppercase mb-1">Student Checklist:</span>
-                                      Identify the displacement on lower timeframes (5m/1m). Enter trades on retracements into Fair Value Gaps (FVG) or institutional Order Blocks (OB) during the NY Killzone. Target the opposite session high.
-                                  </div>
-                              </div>
-                          )}
-                      </div>
-                  </div>
-
-                  {/* Bottom: Dynamic SVG Graphic */}
-                  <div className="space-y-4 mt-8">
-                      <h4 className="text-brandGold font-bold uppercase tracking-wider text-xs font-display text-center">Interactive PO3 Timeline Schematic</h4>
+                      {/* Timeline SVG */}
                       <div className="bg-black/40 border border-white/10 rounded-xl p-8 flex flex-col items-center justify-center min-h-[300px] relative">
                           <div className="absolute top-4 left-4 text-xs font-bold text-gray-500 uppercase tracking-widest font-mono">Dynamic Schematic</div>
                           
@@ -847,6 +828,53 @@ export default function ModuleSessions() {
               </div>
           </div>
           {/* Next Arrow */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+              <a href="#topic-4-6" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
+                  <span className="uppercase font-bold mb-1">Next Topic</span>
+                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+              </a>
+          </div>
+      </section>
+
+      {/* Section 4.6: Custom TradingView Indicator */}
+      <section id="topic-4-6" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
+          <div className="w-full max-w-5xl flex flex-col">
+              <div className="mb-10 text-center md:text-left">
+                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 4.6</div>
+                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Killzone Indicator for TradingView</h2>
+              </div>
+              
+              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
+                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Automate session shading, pivots, and range metrics on your charts with our custom Pine Script indicator:</p>
+                  
+                  <div className="grid lg:grid-cols-3 gap-8 items-stretch">
+                      {/* Left Panel: Instructions */}
+                      <div className="lg:col-span-1 space-y-6 flex flex-col justify-between">
+                          <div className="space-y-4">
+                              <h3 className="text-white font-bold uppercase text-xs tracking-wider font-display mb-2 text-brandGold">Setup Instructions</h3>
+                              <ol className="space-y-4 text-xs text-gray-300 font-light list-decimal list-inside leading-relaxed font-sans">
+                                  <li className="pl-1"><span className="text-white font-semibold">Copy the Code:</span> Click the gold "Copy Code" button to copy the indicator script to your clipboard.</li>
+                                  <li className="pl-1"><span className="text-white font-semibold">Open TradingView:</span> Navigate to your TradingView charts.</li>
+                                  <li className="pl-1"><span className="text-white font-semibold">Access Pine Editor:</span> Click on the **Pine Editor** tab located at the bottom of the TradingView window.</li>
+                                  <li className="pl-1"><span className="text-white font-semibold">Paste and Save:</span> Delete any template code, paste the copied script, and click **Save**. Name the indicator `KillZones By TeamUnknowns`.</li>
+                                  <li className="pl-1"><span className="text-white font-semibold">Add to Chart:</span> Click **Add to chart** to plot the killzones instantly.</li>
+                              </ol>
+                          </div>
+                          
+                          <div className="bg-brandGold/5 p-4 rounded-lg border border-brandGold/15 text-[11px] font-mono mt-6 leading-relaxed">
+                              <span className="text-brandGold font-bold block mb-1">💡 Customization Tip:</span>
+                              Double-click on any of the colored boxes on your chart to open settings. You can adjust box transparency, custom session timings, toggle alert boundaries, and extend session pivots.
+                          </div>
+                      </div>
+
+                      {/* Right Panel: Code block */}
+                      <PineScriptSection />
+                  </div>
+              </div>
+          </div>
+          {/* Next Arrow (Points to Module 5) */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
               <a href="#module5" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
                   <span className="uppercase font-bold mb-1">Next Module</span>

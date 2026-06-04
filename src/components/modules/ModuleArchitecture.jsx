@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PineScriptSection from '../PineScriptSection';
 
 export default function ModuleArchitecture() {
   const [sbSetup, setSbSetup] = useState('bullish');
@@ -52,7 +51,7 @@ export default function ModuleArchitecture() {
                           <p>
                               The algorithm seeks liquidity. Look at the Daily or 4-Hour chart to locate the nearest **Draw on Liquidity**. This is the target destination price is attracted to:
                           </p>
-                          <ul className="list-disc list-inside space-y-1 text-gray-400">
+                          <ul className="list-disc list-inside space-y-1 text-gray-400 font-sans">
                               <li>Equal Highs (EQH) or Equal Lows (EQL).</li>
                               <li>Previous Daily Highs (PDH) or Lows (PDL).</li>
                               <li>Unmitigated High-Timeframe Fair Value Gaps (FVG).</li>
@@ -64,7 +63,7 @@ export default function ModuleArchitecture() {
                           <p>
                               Analyze higher-timeframe swing points to check structural alignment:
                           </p>
-                          <ul className="list-disc list-inside space-y-1 text-gray-400">
+                          <ul className="list-disc list-inside space-y-1 text-gray-400 font-sans">
                               <li>**Bullish Bias**: Price is printing Higher Highs and Higher Lows, breaking swing highs, and respecting discount zones (FVGs, Order Blocks).</li>
                               <li>**Bearish Bias**: Price is printing Lower Highs and Lower Lows, breaking swing lows, and respecting premium zones.</li>
                           </ul>
@@ -315,53 +314,6 @@ export default function ModuleArchitecture() {
                               </svg>
                           )}
                       </div>
-                  </div>
-              </div>
-          </div>
-          {/* Next Arrow */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-              <a href="#topic-5-3" className="flex flex-col items-center text-xs tracking-[0.2em] text-brandGold/60 hover:text-brandGold transition-colors duration-300">
-                  <span className="uppercase font-bold mb-1">Next Topic</span>
-                  <svg className="w-5 h-5 animate-bounce text-brandGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                  </svg>
-              </a>
-          </div>
-      </section>
-
-      {/* Section 5.3: Custom TradingView Indicator */}
-      <section id="topic-5-3" className="min-h-screen flex items-center justify-center py-24 px-4 sm:px-6 relative z-10">
-          <div className="w-full max-w-5xl flex flex-col">
-              <div className="mb-10 text-center md:text-left">
-                  <div className="text-brandGold font-bold tracking-widest uppercase text-sm mb-2">Section 5.3</div>
-                  <h2 className="text-3xl font-black font-display uppercase tracking-wide">Killzone Indicator for TradingView</h2>
-              </div>
-              
-              <div className="glass-panel border-t-4 border-t-brandGold p-8 sm:p-10 md:p-14 rounded-xl">
-                  <p className="text-gray-400 font-light mb-8 text-sm uppercase tracking-wider">Automate session shading, pivots, and range metrics on your charts with our custom Pine Script indicator:</p>
-                  
-                  <div className="grid lg:grid-cols-3 gap-8 items-stretch">
-                      {/* Left Panel: Instructions */}
-                      <div className="lg:col-span-1 space-y-6 flex flex-col justify-between">
-                          <div className="space-y-4">
-                              <h3 className="text-white font-bold uppercase text-xs tracking-wider font-display mb-2 text-brandGold">Setup Instructions</h3>
-                              <ol className="space-y-4 text-xs text-gray-300 font-light list-decimal list-inside leading-relaxed">
-                                  <li className="pl-1"><span className="text-white font-semibold">Copy the Code:</span> Click the gold "Copy Code" button to copy the indicator script to your clipboard.</li>
-                                  <li className="pl-1"><span className="text-white font-semibold">Open TradingView:</span> Navigate to your TradingView charts.</li>
-                                  <li className="pl-1"><span className="text-white font-semibold">Access Pine Editor:</span> Click on the **Pine Editor** tab located at the bottom of the TradingView window.</li>
-                                  <li className="pl-1"><span className="text-white font-semibold">Paste and Save:</span> Delete any template code, paste the copied script, and click **Save**. Name the indicator `KillZones By TeamUnknowns`.</li>
-                                  <li className="pl-1"><span className="text-white font-semibold">Add to Chart:</span> Click **Add to chart** to plot the killzones instantly.</li>
-                              </ol>
-                          </div>
-                          
-                          <div className="bg-brandGold/5 p-4 rounded-lg border border-brandGold/15 text-[11px] font-mono mt-6 leading-relaxed">
-                              <span className="text-brandGold font-bold block mb-1">💡 Customization Tip:</span>
-                              Double-click on any of the colored boxes on your chart to open settings. You can adjust box transparency, custom session timings, toggle alert boundaries, and extend session pivots.
-                          </div>
-                      </div>
-
-                      {/* Right Panel: Code block */}
-                      <PineScriptSection />
                   </div>
               </div>
           </div>
