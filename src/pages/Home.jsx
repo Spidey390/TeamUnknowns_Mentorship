@@ -1,0 +1,37 @@
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ModuleBasics from '../components/modules/ModuleBasics';
+import ModuleCandlesticks from '../components/modules/ModuleCandlesticks';
+import ModulePriceAction from '../components/modules/ModulePriceAction';
+import ModuleLiquidity from '../components/modules/ModuleLiquidity';
+import ModuleSessions from '../components/modules/ModuleSessions';
+import ModulePDArray from '../components/modules/ModulePDArray';
+import ModuleArchitecture from '../components/modules/ModuleArchitecture';
+
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <main className="pb-20 relative overflow-x-hidden w-full">
+
+        {/* Abstract background elements */}
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brandGold rounded-full mix-blend-overlay filter blur-[200px] opacity-[0.03] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-brandGold rounded-full mix-blend-overlay filter blur-[150px] opacity-[0.02] pointer-events-none"></div>
+        
+        <div className="circle-accent w-[600px] h-[600px] -top-20 -left-40"></div>
+        <div className="circle-accent w-[300px] h-[300px] top-80 right-20 border-opacity-5"></div>
+
+        <ModuleBasics />
+        <ModuleCandlesticks />
+        <ModulePriceAction />
+        <ModuleLiquidity />
+        <ModuleSessions />
+        <ModulePDArray />
+        <ModuleArchitecture />
+
+      </main>
+      <Footer />
+    </>
+  );
+}
